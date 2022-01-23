@@ -23,6 +23,7 @@ extension DashboardPresenter: IDashboardPresenter {
 
     func getPhotos() -> [Photo] {
         // TODO: will be implemented
+        []
     }
 
     func photoItemPressed(with pressedItem: Photo) {

@@ -32,7 +32,7 @@ class DashboardRouter {
         router.view = viewController
 
         interactor.output = presenter
-        interacotr.apiClient = apiClient
+        interactor.apiClient = apiClient
 
         return viewController
     }
