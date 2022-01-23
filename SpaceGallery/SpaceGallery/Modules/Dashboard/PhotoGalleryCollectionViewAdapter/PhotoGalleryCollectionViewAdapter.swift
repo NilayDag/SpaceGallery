@@ -19,7 +19,7 @@ extension PhotoGalleryCollectionViewAdapter {
     func sectionCount() -> Int {
         DashboardConstants.photoGallerySectionCount
     }
-    
+
     func numberOfItems() -> Int {
         getPhotos().count
     }

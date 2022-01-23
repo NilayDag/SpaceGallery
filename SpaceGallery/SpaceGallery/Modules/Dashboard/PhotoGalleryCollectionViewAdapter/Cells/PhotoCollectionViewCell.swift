@@ -8,7 +8,6 @@
 import UIKit
 
 class PhotoCollectionViewCell: UICollectionViewCell {
-    
     private var photo: Photo?
 
     func setup(with item: Photo) {

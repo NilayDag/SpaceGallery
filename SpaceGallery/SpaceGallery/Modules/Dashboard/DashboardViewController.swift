@@ -23,12 +23,12 @@ class DashboardViewController: UIViewController, StoryboardLoadable {
         presenter?.viewDidLoad()
         commonInit()
     }
-    
+
     private func commonInit() {
         title = DashboardConstants.title
         setupCollectionView()
     }
-    
+
     private func setupCollectionView() {
         photoGalleryCollectionView.delegate = adapter
         photoGalleryCollectionView.dataSource = adapter

@@ -35,7 +35,7 @@ extension DashboardPresenter: IDashboardInteractorToPresenter {
     func wsErrorOccurred(with message: String) {
         // TODO: will be implemented
     }
-    
+
     func photosReceived(_ photoList: [Photo]) {
         // TODO: will be implemented
     }
