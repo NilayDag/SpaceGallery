@@ -1,0 +1,23 @@
+included:
+  - SpaceGallery
+  
+trailing_whitespace: # Lines should not have trailing whitespace.
+  severity: error
+  ignores_comments: true
+
+vertical_whitespace: # Limit vertical whitespace to a single empty line.
+  severity: error
+  ignores_comments: true
+  
+line_length:
+    error: 150
+
+comma: error # There should be no space before and one after any comma.
+
+colon: error # Colons should be next to the identifier when specifying a type and next to the key in dictionary literals.
+
+force_cast: error # Force casts should be avoided.
+
+opening_brace: # Closure expressions should have a single space inside each brace.
+  severity: error
+

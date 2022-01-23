@@ -18,6 +18,18 @@
 		31B1A293279DE3300013695A /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B1A292279DE32F0013695A /* AppRouter.swift */; };
 		31B1A297279DE4600013695A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 31B1A296279DE4600013695A /* Alamofire */; };
 		31B1A29A279DE4D10013695A /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 31B1A299279DE4D10013695A /* SDWebImage */; };
+		31B1A2A4279DE9C40013695A /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31B1A29E279DE9C40013695A /* Dashboard.storyboard */; };
+		31B1A2A5279DE9C40013695A /* DashboardContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B1A29F279DE9C40013695A /* DashboardContract.swift */; };
+		31B1A2A6279DE9C40013695A /* DashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B1A2A0279DE9C40013695A /* DashboardPresenter.swift */; };
+		31B1A2A7279DE9C40013695A /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B1A2A1279DE9C40013695A /* DashboardRouter.swift */; };
+		31B1A2A8279DE9C40013695A /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B1A2A2279DE9C40013695A /* DashboardViewController.swift */; };
+		31B1A2A9279DE9C40013695A /* DashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B1A2A3279DE9C40013695A /* DashboardInteractor.swift */; };
+		31B1A2AC279DEA4D0013695A /* UIStoryboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B1A2AB279DEA4D0013695A /* UIStoryboard+Ext.swift */; };
+		31B1A2AE279DEA7A0013695A /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B1A2AD279DEA7A0013695A /* StoryboardLoadable.swift */; };
+		31B1A2B0279DEA8D0013695A /* IBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B1A2AF279DEA8D0013695A /* IBaseView.swift */; };
+		31B1A2B2279DEA9F0013695A /* IBasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B1A2B1279DEA9F0013695A /* IBasePresenter.swift */; };
+		31B1A2B4279DEAAE0013695A /* IBaseInteractorToPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B1A2B3279DEAAE0013695A /* IBaseInteractorToPresenter.swift */; };
+		31B1A2B6279DEB6E0013695A /* LoadingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B1A2B5279DEB6E0013695A /* LoadingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +63,18 @@
 		31B1A27C279DE1E90013695A /* SpaceGalleryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceGalleryUITests.swift; sourceTree = "<group>"; };
 		31B1A27E279DE1E90013695A /* SpaceGalleryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceGalleryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		31B1A292279DE32F0013695A /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		31B1A29E279DE9C40013695A /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		31B1A29F279DE9C40013695A /* DashboardContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardContract.swift; sourceTree = "<group>"; };
+		31B1A2A0279DE9C40013695A /* DashboardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPresenter.swift; sourceTree = "<group>"; };
+		31B1A2A1279DE9C40013695A /* DashboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRouter.swift; sourceTree = "<group>"; };
+		31B1A2A2279DE9C40013695A /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		31B1A2A3279DE9C40013695A /* DashboardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardInteractor.swift; sourceTree = "<group>"; };
+		31B1A2AB279DEA4D0013695A /* UIStoryboard+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Ext.swift"; sourceTree = "<group>"; };
+		31B1A2AD279DEA7A0013695A /* StoryboardLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
+		31B1A2AF279DEA8D0013695A /* IBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBaseView.swift; sourceTree = "<group>"; };
+		31B1A2B1279DEA9F0013695A /* IBasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBasePresenter.swift; sourceTree = "<group>"; };
+		31B1A2B3279DEAAE0013695A /* IBaseInteractorToPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBaseInteractorToPresenter.swift; sourceTree = "<group>"; };
+		31B1A2B5279DEB6E0013695A /* LoadingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +168,8 @@
 		31B1A28C279DE2490013695A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				31B1A266279DE1E90013695A /* LaunchScreen.storyboard */,
+				31B1A29C279DE6C70013695A /* LaunchScreen */,
+				31B1A29D279DE9B10013695A /* Dashboard */,
 				31B1A25F279DE1E30013695A /* ViewController.swift */,
 				31B1A261279DE1E30013695A /* Main.storyboard */,
 			);
@@ -161,6 +186,7 @@
 		31B1A28E279DE2610013695A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				31B1A2AB279DEA4D0013695A /* UIStoryboard+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -168,6 +194,7 @@
 		31B1A28F279DE26A0013695A /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				31B1A2AA279DEA3A0013695A /* BaseProtocols */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -176,7 +203,6 @@
 			isa = PBXGroup;
 			children = (
 				31B1A264279DE1E90013695A /* Assets.xcassets */,
-				31B1A269279DE1E90013695A /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -184,6 +210,7 @@
 		31B1A291279DE27B0013695A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				31B1A269279DE1E90013695A /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -191,8 +218,41 @@
 		31B1A29B279DE4E00013695A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				31B1A2B5279DEB6E0013695A /* LoadingManager.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		31B1A29C279DE6C70013695A /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				31B1A266279DE1E90013695A /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		31B1A29D279DE9B10013695A /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				31B1A29F279DE9C40013695A /* DashboardContract.swift */,
+				31B1A2A0279DE9C40013695A /* DashboardPresenter.swift */,
+				31B1A2A1279DE9C40013695A /* DashboardRouter.swift */,
+				31B1A2A2279DE9C40013695A /* DashboardViewController.swift */,
+				31B1A2A3279DE9C40013695A /* DashboardInteractor.swift */,
+				31B1A29E279DE9C40013695A /* Dashboard.storyboard */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		31B1A2AA279DEA3A0013695A /* BaseProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				31B1A2AD279DEA7A0013695A /* StoryboardLoadable.swift */,
+				31B1A2AF279DEA8D0013695A /* IBaseView.swift */,
+				31B1A2B1279DEA9F0013695A /* IBasePresenter.swift */,
+				31B1A2B3279DEAAE0013695A /* IBaseInteractorToPresenter.swift */,
+			);
+			path = BaseProtocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +371,7 @@
 				31B1A268279DE1E90013695A /* LaunchScreen.storyboard in Resources */,
 				31B1A265279DE1E90013695A /* Assets.xcassets in Resources */,
 				31B1A263279DE1E30013695A /* Main.storyboard in Resources */,
+				31B1A2A4279DE9C40013695A /* Dashboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,9 +417,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31B1A2A5279DE9C40013695A /* DashboardContract.swift in Sources */,
+				31B1A2A8279DE9C40013695A /* DashboardViewController.swift in Sources */,
+				31B1A2B6279DEB6E0013695A /* LoadingManager.swift in Sources */,
+				31B1A2A7279DE9C40013695A /* DashboardRouter.swift in Sources */,
+				31B1A2A6279DE9C40013695A /* DashboardPresenter.swift in Sources */,
+				31B1A2B0279DEA8D0013695A /* IBaseView.swift in Sources */,
 				31B1A260279DE1E30013695A /* ViewController.swift in Sources */,
+				31B1A2AC279DEA4D0013695A /* UIStoryboard+Ext.swift in Sources */,
+				31B1A2B2279DEA9F0013695A /* IBasePresenter.swift in Sources */,
+				31B1A2AE279DEA7A0013695A /* StoryboardLoadable.swift in Sources */,
 				31B1A25C279DE1E30013695A /* AppDelegate.swift in Sources */,
+				31B1A2B4279DEAAE0013695A /* IBaseInteractorToPresenter.swift in Sources */,
 				31B1A293279DE3300013695A /* AppRouter.swift in Sources */,
+				31B1A2A9279DE9C40013695A /* DashboardInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
