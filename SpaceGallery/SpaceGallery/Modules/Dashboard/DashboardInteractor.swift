@@ -12,8 +12,11 @@ class DashboardInteractor {
 
     // MARK: Properties
     weak var output: IDashboardInteractorToPresenter?
+    var apiClient: APIClient?
 }
 
 extension DashboardInteractor: IDashboardInteractor {
-    // TODO: Implement use case methods
+    func retrievePhotos() {
+        // TODO: will be implemented
+    }
 }

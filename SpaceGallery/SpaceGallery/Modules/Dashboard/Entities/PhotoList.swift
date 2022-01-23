@@ -10,3 +10,7 @@ import Foundation
 // TODO: to be implemented
 struct PhotoList: Codable {
 }
+
+// TODO: to be implemented
+struct Photo: Codable {
+}

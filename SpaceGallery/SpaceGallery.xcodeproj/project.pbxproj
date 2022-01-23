@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3191579E279DF9A900706B96 /* PhotoGalleryCollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3191579D279DF9A900706B96 /* PhotoGalleryCollectionViewAdapter.swift */; };
+		319157A1279DFA6700706B96 /* DashboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319157A0279DFA6700706B96 /* DashboardConstants.swift */; };
+		319157A5279DFB4D00706B96 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319157A3279DFB4D00706B96 /* PhotoCollectionViewCell.swift */; };
+		319157A6279DFB4D00706B96 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 319157A4279DFB4D00706B96 /* PhotoCollectionViewCell.xib */; };
+		319157A8279DFB9F00706B96 /* NSObject+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319157A7279DFB9F00706B96 /* NSObject+Ext.swift */; };
 		31B1A25C279DE1E30013695A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B1A25B279DE1E30013695A /* AppDelegate.swift */; };
 		31B1A265279DE1E90013695A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31B1A264279DE1E90013695A /* Assets.xcassets */; };
 		31B1A268279DE1E90013695A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31B1A266279DE1E90013695A /* LaunchScreen.storyboard */; };
@@ -55,6 +60,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3191579D279DF9A900706B96 /* PhotoGalleryCollectionViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryCollectionViewAdapter.swift; sourceTree = "<group>"; };
+		319157A0279DFA6700706B96 /* DashboardConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardConstants.swift; sourceTree = "<group>"; };
+		319157A3279DFB4D00706B96 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		319157A4279DFB4D00706B96 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		319157A7279DFB9F00706B96 /* NSObject+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Ext.swift"; sourceTree = "<group>"; };
 		31B1A258279DE1E30013695A /* SpaceGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31B1A25B279DE1E30013695A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31B1A264279DE1E90013695A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,6 +124,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3191579C279DF8F500706B96 /* PhotoGalleryCollectionViewAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				319157A2279DFB3D00706B96 /* Cells */,
+				3191579D279DF9A900706B96 /* PhotoGalleryCollectionViewAdapter.swift */,
+			);
+			path = PhotoGalleryCollectionViewAdapter;
+			sourceTree = "<group>";
+		};
+		3191579F279DFA5D00706B96 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				319157A0279DFA6700706B96 /* DashboardConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		319157A2279DFB3D00706B96 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				319157A3279DFB4D00706B96 /* PhotoCollectionViewCell.swift */,
+				319157A4279DFB4D00706B96 /* PhotoCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		31B1A24F279DE1E30013695A = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +237,7 @@
 			children = (
 				31B1A2AB279DEA4D0013695A /* UIStoryboard+Ext.swift */,
 				31B1A2C6279DF63E0013695A /* UIView+Ext.swift */,
+				319157A7279DFB9F00706B96 /* NSObject+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -248,6 +285,8 @@
 		31B1A29D279DE9B10013695A /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				3191579F279DFA5D00706B96 /* Constants */,
+				3191579C279DF8F500706B96 /* PhotoGalleryCollectionViewAdapter */,
 				31B1A2C3279DF2080013695A /* Entities */,
 				31B1A29F279DE9C40013695A /* DashboardContract.swift */,
 				31B1A2A0279DE9C40013695A /* DashboardPresenter.swift */,
@@ -408,6 +447,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31B1A268279DE1E90013695A /* LaunchScreen.storyboard in Resources */,
+				319157A6279DFB4D00706B96 /* PhotoCollectionViewCell.xib in Resources */,
 				31B1A265279DE1E90013695A /* Assets.xcassets in Resources */,
 				31B1A2A4279DE9C40013695A /* Dashboard.storyboard in Resources */,
 			);
@@ -457,11 +497,14 @@
 			files = (
 				31B1A2A5279DE9C40013695A /* DashboardContract.swift in Sources */,
 				31B1A2BE279DEDC50013695A /* APIProvider.swift in Sources */,
+				319157A1279DFA6700706B96 /* DashboardConstants.swift in Sources */,
+				3191579E279DF9A900706B96 /* PhotoGalleryCollectionViewAdapter.swift in Sources */,
 				31B1A2A8279DE9C40013695A /* DashboardViewController.swift in Sources */,
 				31B1A2B6279DEB6E0013695A /* LoadingManager.swift in Sources */,
 				31B1A2A7279DE9C40013695A /* DashboardRouter.swift in Sources */,
 				31B1A2A6279DE9C40013695A /* DashboardPresenter.swift in Sources */,
 				31B1A2B0279DEA8D0013695A /* IBaseView.swift in Sources */,
+				319157A5279DFB4D00706B96 /* PhotoCollectionViewCell.swift in Sources */,
 				31B1A2AC279DEA4D0013695A /* UIStoryboard+Ext.swift in Sources */,
 				31B1A2BA279DEDB70013695A /* APIRouter.swift in Sources */,
 				31B1A2C5279DF2180013695A /* PhotoList.swift in Sources */,
@@ -469,6 +512,7 @@
 				31B1A2B2279DEA9F0013695A /* IBasePresenter.swift in Sources */,
 				31B1A2C7279DF63E0013695A /* UIView+Ext.swift in Sources */,
 				31B1A2C2279DEE8C0013695A /* WSConfig.swift in Sources */,
+				319157A8279DFB9F00706B96 /* NSObject+Ext.swift in Sources */,
 				31B1A2AE279DEA7A0013695A /* StoryboardLoadable.swift in Sources */,
 				31B1A25C279DE1E30013695A /* AppDelegate.swift in Sources */,
 				31B1A2B4279DEAAE0013695A /* IBaseInteractorToPresenter.swift in Sources */,

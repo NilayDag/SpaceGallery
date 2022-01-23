@@ -17,9 +17,25 @@ class DashboardPresenter {
 }
 
 extension DashboardPresenter: IDashboardPresenter {
-    // TODO: implement presentation methods
+    func viewDidLoad() {
+        // TODO: will be implemented
+    }
+
+    func getPhotos() -> [Photo] {
+        // TODO: will be implemented
+    }
+
+    func photoItemPressed(with pressedItem: Photo) {
+        // TODO: will be implemented
+    }
 }
 
 extension DashboardPresenter: IDashboardInteractorToPresenter {
-    // TODO: implement interactor output methods
+    func wsErrorOccurred(with message: String) {
+        // TODO: will be implemented
+    }
+    
+    func photosReceived(_ photoList: [Photo]) {
+        // TODO: will be implemented
+    }
 }

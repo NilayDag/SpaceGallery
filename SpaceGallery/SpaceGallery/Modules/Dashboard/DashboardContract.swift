@@ -12,16 +12,17 @@ protocol IDashboardView: IBaseView {
     // TODO: Declare view methods
 }
 
-protocol IDashboardPresenter: AnyObject {
-    // TODO: Declare presentation methods
+protocol IDashboardPresenter: IBasePresenter {
+    func getPhotos() -> [Photo]
+    func photoItemPressed(with pressedItem: Photo)
 }
 
 protocol IDashboardInteractor: AnyObject {
-    // TODO: Declare use case methods
+    func retrievePhotos()
 }
 
-protocol IDashboardInteractorToPresenter: AnyObject {
-    // TODO: Declare interactor output methods
+protocol IDashboardInteractorToPresenter: IBaseInteractorToPresenter {
+    func photosReceived(_ photoList: [Photo])
 }
 
 protocol IDashboardRouter: AnyObject {
