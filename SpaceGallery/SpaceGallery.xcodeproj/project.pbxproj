@@ -34,6 +34,7 @@
 		31B1A2C0279DEE740013695A /* WSResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B1A2BF279DEE740013695A /* WSResponse.swift */; };
 		31B1A2C2279DEE8C0013695A /* WSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B1A2C1279DEE8C0013695A /* WSConfig.swift */; };
 		31B1A2C5279DF2180013695A /* PhotoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B1A2C4279DF2180013695A /* PhotoList.swift */; };
+		31B1A2C7279DF63E0013695A /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B1A2C6279DF63E0013695A /* UIView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		31B1A2BF279DEE740013695A /* WSResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSResponse.swift; sourceTree = "<group>"; };
 		31B1A2C1279DEE8C0013695A /* WSConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSConfig.swift; sourceTree = "<group>"; };
 		31B1A2C4279DF2180013695A /* PhotoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoList.swift; sourceTree = "<group>"; };
+		31B1A2C6279DF63E0013695A /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				31B1A2AB279DEA4D0013695A /* UIStoryboard+Ext.swift */,
+				31B1A2C6279DF63E0013695A /* UIView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				31B1A2C5279DF2180013695A /* PhotoList.swift in Sources */,
 				31B1A2BC279DEDBE0013695A /* APIClient.swift in Sources */,
 				31B1A2B2279DEA9F0013695A /* IBasePresenter.swift in Sources */,
+				31B1A2C7279DF63E0013695A /* UIView+Ext.swift in Sources */,
 				31B1A2C2279DEE8C0013695A /* WSConfig.swift in Sources */,
 				31B1A2AE279DEA7A0013695A /* StoryboardLoadable.swift in Sources */,
 				31B1A25C279DE1E30013695A /* AppDelegate.swift in Sources */,
