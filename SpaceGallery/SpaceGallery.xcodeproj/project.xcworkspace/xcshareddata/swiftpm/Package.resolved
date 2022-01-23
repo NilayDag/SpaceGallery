@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": "master",
+          "revision": "3e5fc5d8ae939b655929a0edd60d3bb70f38027f",
+          "version": null
+        }
+      },
+      {
+        "package": "SDWebImage",
+        "repositoryURL": "https://github.com/SDWebImage/SDWebImage.git",
+        "state": {
+          "branch": "master",
+          "revision": "0cd9a6485acb6964330cce773fc93be7452ac2c8",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
