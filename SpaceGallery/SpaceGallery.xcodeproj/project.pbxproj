@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3122DBE8279F04E30083020B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DBE7279F04E30083020B /* Constants.swift */; };
+		3122DBEA279F07760083020B /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DBE9279F07760083020B /* ImageManager.swift */; };
+		3122DBEC279F07A90083020B /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DBEB279F07A90083020B /* String+Ext.swift */; };
+		3122DBEE279F08630083020B /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DBED279F08630083020B /* UICollectionView+Ext.swift */; };
 		3191579E279DF9A900706B96 /* PhotoGalleryCollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3191579D279DF9A900706B96 /* PhotoGalleryCollectionViewAdapter.swift */; };
 		319157A1279DFA6700706B96 /* DashboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319157A0279DFA6700706B96 /* DashboardConstants.swift */; };
 		319157A5279DFB4D00706B96 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319157A3279DFB4D00706B96 /* PhotoCollectionViewCell.swift */; };
@@ -60,6 +64,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3122DBE7279F04E30083020B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3122DBE9279F07760083020B /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		3122DBEB279F07A90083020B /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		3122DBED279F08630083020B /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
 		3191579D279DF9A900706B96 /* PhotoGalleryCollectionViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryCollectionViewAdapter.swift; sourceTree = "<group>"; };
 		319157A0279DFA6700706B96 /* DashboardConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardConstants.swift; sourceTree = "<group>"; };
 		319157A3279DFB4D00706B96 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -124,6 +132,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3122DBE6279F04DA0083020B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3122DBE7279F04E30083020B /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		3191579C279DF8F500706B96 /* PhotoGalleryCollectionViewAdapter */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,7 +253,9 @@
 			children = (
 				31B1A2AB279DEA4D0013695A /* UIStoryboard+Ext.swift */,
 				31B1A2C6279DF63E0013695A /* UIView+Ext.swift */,
+				3122DBED279F08630083020B /* UICollectionView+Ext.swift */,
 				319157A7279DFB9F00706B96 /* NSObject+Ext.swift */,
+				3122DBEB279F07A90083020B /* String+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -245,6 +263,7 @@
 		31B1A28F279DE26A0013695A /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				3122DBE6279F04DA0083020B /* Constants */,
 				31B1A2AA279DEA3A0013695A /* BaseProtocols */,
 			);
 			path = Commons;
@@ -270,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				31B1A2B5279DEB6E0013695A /* LoadingManager.swift */,
+				3122DBE9279F07760083020B /* ImageManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -495,6 +515,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3122DBE8279F04E30083020B /* Constants.swift in Sources */,
 				31B1A2A5279DE9C40013695A /* DashboardContract.swift in Sources */,
 				31B1A2BE279DEDC50013695A /* APIProvider.swift in Sources */,
 				319157A1279DFA6700706B96 /* DashboardConstants.swift in Sources */,
@@ -503,6 +524,8 @@
 				31B1A2B6279DEB6E0013695A /* LoadingManager.swift in Sources */,
 				31B1A2A7279DE9C40013695A /* DashboardRouter.swift in Sources */,
 				31B1A2A6279DE9C40013695A /* DashboardPresenter.swift in Sources */,
+				3122DBEC279F07A90083020B /* String+Ext.swift in Sources */,
+				3122DBEE279F08630083020B /* UICollectionView+Ext.swift in Sources */,
 				31B1A2B0279DEA8D0013695A /* IBaseView.swift in Sources */,
 				319157A5279DFB4D00706B96 /* PhotoCollectionViewCell.swift in Sources */,
 				31B1A2AC279DEA4D0013695A /* UIStoryboard+Ext.swift in Sources */,
@@ -519,6 +542,7 @@
 				31B1A293279DE3300013695A /* AppRouter.swift in Sources */,
 				31B1A2A9279DE9C40013695A /* DashboardInteractor.swift in Sources */,
 				31B1A2C0279DEE740013695A /* WSResponse.swift in Sources */,
+				3122DBEA279F07760083020B /* ImageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

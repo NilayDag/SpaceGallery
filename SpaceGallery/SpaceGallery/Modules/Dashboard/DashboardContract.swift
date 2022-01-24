@@ -9,7 +9,7 @@
 import Foundation
 
 protocol IDashboardView: IBaseView {
-    // TODO: Declare view methods
+    func reloadCollectionView()
 }
 
 protocol IDashboardPresenter: IBasePresenter {
@@ -18,11 +18,12 @@ protocol IDashboardPresenter: IBasePresenter {
 }
 
 protocol IDashboardInteractor: AnyObject {
-    func retrievePhotos()
+    func retrievePhotos(from pageNumber: Int)
 }
 
 protocol IDashboardInteractorToPresenter: IBaseInteractorToPresenter {
     func photosReceived(_ photoList: [Photo])
+    func noPhotoFound()
 }
 
 protocol IDashboardRouter: AnyObject {

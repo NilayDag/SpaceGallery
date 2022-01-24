@@ -32,11 +32,12 @@ class DashboardViewController: UIViewController, StoryboardLoadable {
     private func setupCollectionView() {
         photoGalleryCollectionView.delegate = adapter
         photoGalleryCollectionView.dataSource = adapter
-        photoGalleryCollectionView.register(PhotoCollectionViewCell.self,
-                                            forCellWithReuseIdentifier: PhotoCollectionViewCell.nameOfClass)
+        photoGalleryCollectionView.registerCell(PhotoCollectionViewCell.self)
     }
 }
 
 extension DashboardViewController: IDashboardView {
-    // TODO: implement view output methods
+    func reloadCollectionView() {
+        photoGalleryCollectionView.reloadData()
+    }
 }

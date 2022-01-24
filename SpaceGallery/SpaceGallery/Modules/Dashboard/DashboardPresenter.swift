@@ -14,16 +14,18 @@ class DashboardPresenter {
     weak var view: IDashboardView?
     var router: IDashboardRouter?
     var interactor: IDashboardInteractor?
+    private var currentPage: Int = 0
+    private var photos: [Photo] = [Photo]()
 }
 
 extension DashboardPresenter: IDashboardPresenter {
     func viewDidLoad() {
-        // TODO: will be implemented
+        view?.showProgressHUD()
+        interactor?.retrievePhotos(from: currentPage)
     }
 
     func getPhotos() -> [Photo] {
-        // TODO: will be implemented
-        []
+        photos
     }
 
     func photoItemPressed(with pressedItem: Photo) {
@@ -33,10 +35,18 @@ extension DashboardPresenter: IDashboardPresenter {
 
 extension DashboardPresenter: IDashboardInteractorToPresenter {
     func wsErrorOccurred(with message: String) {
-        // TODO: will be implemented
+        view?.hideProgressHUD()
+        view?.showErrorDialog(with: message)
+    }
+
+    func noPhotoFound() {
+        // TODO: show empty state
+        view?.hideProgressHUD()
     }
 
     func photosReceived(_ photoList: [Photo]) {
-        // TODO: will be implemented
+        photos = photoList
+        view?.hideProgressHUD()
+        view?.reloadCollectionView()
     }
 }

@@ -8,11 +8,15 @@
 import UIKit
 
 class PhotoCollectionViewCell: UICollectionViewCell {
+    // MARK: - IBOutlets
+    @IBOutlet private weak var photoImageView: UIImageView!
+
+    // MARK: - Properties
     private var photo: Photo?
 
     func setup(with item: Photo) {
         photo = item
-        // TODO: will be implemented
+        ImageManager.shared.downloadOrSetFromCache(from: item.imgSrc,
+                                                   for: photoImageView)
     }
-
 }
