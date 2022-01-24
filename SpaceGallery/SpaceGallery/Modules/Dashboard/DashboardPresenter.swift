@@ -31,7 +31,7 @@ extension DashboardPresenter: IDashboardPresenter {
     }
 
     func photoItemPressed(with pressedItem: Photo) {
-        // TODO: will be implemented
+        router?.navigateToPhotoDetails(for: pressedItem)
     }
 }
 

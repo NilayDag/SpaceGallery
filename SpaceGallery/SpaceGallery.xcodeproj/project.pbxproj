@@ -12,6 +12,12 @@
 		3122DBEC279F07A90083020B /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DBEB279F07A90083020B /* String+Ext.swift */; };
 		3122DBEE279F08630083020B /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DBED279F08630083020B /* UICollectionView+Ext.swift */; };
 		3122DBF1279F0EA30083020B /* GalleryCollectionViewLayoutGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DBF0279F0EA30083020B /* GalleryCollectionViewLayoutGenerator.swift */; };
+		3122DBF9279F1E980083020B /* PhotoDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3122DBF3279F1E980083020B /* PhotoDetails.storyboard */; };
+		3122DBFA279F1E980083020B /* PhotoDetailsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DBF4279F1E980083020B /* PhotoDetailsContract.swift */; };
+		3122DBFB279F1E980083020B /* PhotoDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DBF5279F1E980083020B /* PhotoDetailsPresenter.swift */; };
+		3122DBFD279F1E980083020B /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DBF7279F1E980083020B /* PhotoDetailsViewController.swift */; };
+		3122DC00279F1FAE0083020B /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DBFF279F1FAE0083020B /* UIColor+Ext.swift */; };
+		3122DC02279F284C0083020B /* PhotoDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DC01279F284C0083020B /* PhotoDetailsRouter.swift */; };
 		3191579E279DF9A900706B96 /* PhotoGalleryCollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3191579D279DF9A900706B96 /* PhotoGalleryCollectionViewAdapter.swift */; };
 		319157A1279DFA6700706B96 /* DashboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319157A0279DFA6700706B96 /* DashboardConstants.swift */; };
 		319157A5279DFB4D00706B96 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319157A3279DFB4D00706B96 /* PhotoCollectionViewCell.swift */; };
@@ -70,6 +76,12 @@
 		3122DBEB279F07A90083020B /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		3122DBED279F08630083020B /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
 		3122DBF0279F0EA30083020B /* GalleryCollectionViewLayoutGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewLayoutGenerator.swift; sourceTree = "<group>"; };
+		3122DBF3279F1E980083020B /* PhotoDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoDetails.storyboard; sourceTree = "<group>"; };
+		3122DBF4279F1E980083020B /* PhotoDetailsContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsContract.swift; sourceTree = "<group>"; };
+		3122DBF5279F1E980083020B /* PhotoDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsPresenter.swift; sourceTree = "<group>"; };
+		3122DBF7279F1E980083020B /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
+		3122DBFF279F1FAE0083020B /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		3122DC01279F284C0083020B /* PhotoDetailsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailsRouter.swift; sourceTree = "<group>"; };
 		3191579D279DF9A900706B96 /* PhotoGalleryCollectionViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryCollectionViewAdapter.swift; sourceTree = "<group>"; };
 		319157A0279DFA6700706B96 /* DashboardConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardConstants.swift; sourceTree = "<group>"; };
 		319157A3279DFB4D00706B96 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -148,6 +160,18 @@
 				3122DBF0279F0EA30083020B /* GalleryCollectionViewLayoutGenerator.swift */,
 			);
 			path = GalleryCollectionViewLayoutGenerator;
+			sourceTree = "<group>";
+		};
+		3122DBF2279F1E6E0083020B /* PhotoDetails */ = {
+			isa = PBXGroup;
+			children = (
+				3122DBF4279F1E980083020B /* PhotoDetailsContract.swift */,
+				3122DBF5279F1E980083020B /* PhotoDetailsPresenter.swift */,
+				3122DC01279F284C0083020B /* PhotoDetailsRouter.swift */,
+				3122DBF7279F1E980083020B /* PhotoDetailsViewController.swift */,
+				3122DBF3279F1E980083020B /* PhotoDetails.storyboard */,
+			);
+			path = PhotoDetails;
 			sourceTree = "<group>";
 		};
 		3191579C279DF8F500706B96 /* PhotoGalleryCollectionViewAdapter */ = {
@@ -242,6 +266,7 @@
 			children = (
 				31B1A29C279DE6C70013695A /* LaunchScreen */,
 				31B1A29D279DE9B10013695A /* Dashboard */,
+				3122DBF2279F1E6E0083020B /* PhotoDetails */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -261,8 +286,9 @@
 		31B1A28E279DE2610013695A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				31B1A2AB279DEA4D0013695A /* UIStoryboard+Ext.swift */,
+				3122DBFF279F1FAE0083020B /* UIColor+Ext.swift */,
 				31B1A2C6279DF63E0013695A /* UIView+Ext.swift */,
+				31B1A2AB279DEA4D0013695A /* UIStoryboard+Ext.swift */,
 				3122DBED279F08630083020B /* UICollectionView+Ext.swift */,
 				319157A7279DFB9F00706B96 /* NSObject+Ext.swift */,
 				3122DBEB279F07A90083020B /* String+Ext.swift */,
@@ -477,6 +503,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3122DBF9279F1E980083020B /* PhotoDetails.storyboard in Resources */,
 				31B1A268279DE1E90013695A /* LaunchScreen.storyboard in Resources */,
 				319157A6279DFB4D00706B96 /* PhotoCollectionViewCell.xib in Resources */,
 				31B1A265279DE1E90013695A /* Assets.xcassets in Resources */,
@@ -528,9 +555,11 @@
 			files = (
 				3122DBE8279F04E30083020B /* Constants.swift in Sources */,
 				31B1A2A5279DE9C40013695A /* DashboardContract.swift in Sources */,
+				3122DBFB279F1E980083020B /* PhotoDetailsPresenter.swift in Sources */,
 				31B1A2BE279DEDC50013695A /* APIProvider.swift in Sources */,
 				319157A1279DFA6700706B96 /* DashboardConstants.swift in Sources */,
 				3191579E279DF9A900706B96 /* PhotoGalleryCollectionViewAdapter.swift in Sources */,
+				3122DC00279F1FAE0083020B /* UIColor+Ext.swift in Sources */,
 				3122DBF1279F0EA30083020B /* GalleryCollectionViewLayoutGenerator.swift in Sources */,
 				31B1A2A8279DE9C40013695A /* DashboardViewController.swift in Sources */,
 				31B1A2B6279DEB6E0013695A /* LoadingManager.swift in Sources */,
@@ -538,9 +567,11 @@
 				31B1A2A6279DE9C40013695A /* DashboardPresenter.swift in Sources */,
 				3122DBEC279F07A90083020B /* String+Ext.swift in Sources */,
 				3122DBEE279F08630083020B /* UICollectionView+Ext.swift in Sources */,
+				3122DC02279F284C0083020B /* PhotoDetailsRouter.swift in Sources */,
 				31B1A2B0279DEA8D0013695A /* IBaseView.swift in Sources */,
 				319157A5279DFB4D00706B96 /* PhotoCollectionViewCell.swift in Sources */,
 				31B1A2AC279DEA4D0013695A /* UIStoryboard+Ext.swift in Sources */,
+				3122DBFA279F1E980083020B /* PhotoDetailsContract.swift in Sources */,
 				31B1A2BA279DEDB70013695A /* APIRouter.swift in Sources */,
 				31B1A2C5279DF2180013695A /* PhotoList.swift in Sources */,
 				31B1A2BC279DEDBE0013695A /* APIClient.swift in Sources */,
@@ -549,6 +580,7 @@
 				31B1A2C2279DEE8C0013695A /* WSConfig.swift in Sources */,
 				319157A8279DFB9F00706B96 /* NSObject+Ext.swift in Sources */,
 				31B1A2AE279DEA7A0013695A /* StoryboardLoadable.swift in Sources */,
+				3122DBFD279F1E980083020B /* PhotoDetailsViewController.swift in Sources */,
 				31B1A25C279DE1E30013695A /* AppDelegate.swift in Sources */,
 				31B1A2B4279DEAAE0013695A /* IBaseInteractorToPresenter.swift in Sources */,
 				31B1A293279DE3300013695A /* AppRouter.swift in Sources */,

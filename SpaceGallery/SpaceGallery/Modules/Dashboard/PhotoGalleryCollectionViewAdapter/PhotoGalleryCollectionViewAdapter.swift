@@ -58,9 +58,4 @@ extension PhotoGalleryCollectionViewAdapter: UICollectionViewDelegate, UICollect
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         presenter.photoItemPressed(with: getPhotos()[indexPath.row])
     }
-
-    // swiftlint:disable:next line_length
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: Int(collectionView.frame.width/3), height: Int(collectionView.frame.width/2))
-    }
 }

@@ -28,5 +28,5 @@ protocol IDashboardInteractorToPresenter: IBaseInteractorToPresenter {
 }
 
 protocol IDashboardRouter: AnyObject {
-    // TODO: Declare wireframe methods
+    func navigateToPhotoDetails(for photo: Photo)
 }

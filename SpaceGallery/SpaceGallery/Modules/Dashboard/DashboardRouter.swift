@@ -39,5 +39,8 @@ class DashboardRouter {
 }
 
 extension DashboardRouter: IDashboardRouter {
-    // TODO: Implement wireframe methods
+    func navigateToPhotoDetails(for photo: Photo) {
+        view?.navigationController?.pushViewController(PhotoDetailsRouter
+                                                       .setupModule(with: photo), animated: true)
+    }
 }
