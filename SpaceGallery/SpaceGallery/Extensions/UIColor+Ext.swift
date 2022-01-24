@@ -15,7 +15,7 @@ extension UIColor {
     static var lightPeriwinkle: UIColor {
         UIColor(named: "light_periwinkle") ?? defaultColor()
     }
-    
+
     static var paleGrey: UIColor {
         UIColor(named: "pale_grey") ?? defaultColor()
     }

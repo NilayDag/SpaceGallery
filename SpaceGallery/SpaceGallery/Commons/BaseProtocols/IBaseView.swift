@@ -14,6 +14,15 @@ protocol IBaseView: AnyObject {
 }
 
 extension UIViewController: IBaseView {
+    func resetNavigationBar() {
+        let backButton = UIBarButtonItem()
+        backButton.title = ""
+        backButton.tintColor = .white
+        navigationController?.setNavigationBarHidden(false, animated: false)
+        navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+    }
+
     func showProgressHUD() {
         LoadingManager.shared.showLoadingProgress()
     }
