@@ -11,12 +11,8 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     // MARK: - IBOutlets
     @IBOutlet private weak var photoImageView: UIImageView!
 
-    // MARK: - Properties
-    private var photo: Photo?
-
-    func setup(with item: Photo) {
-        photo = item
-        ImageManager.shared.downloadOrSetFromCache(from: item.imgSrc,
+    func setup(with imageURLString: String) {
+        ImageManager.shared.downloadOrSetFromCache(from: imageURLString,
                                                    for: photoImageView)
     }
 }

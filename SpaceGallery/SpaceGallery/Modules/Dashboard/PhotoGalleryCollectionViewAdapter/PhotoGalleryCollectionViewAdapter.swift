@@ -49,7 +49,7 @@ extension PhotoGalleryCollectionViewAdapter: UICollectionViewDelegate, UICollect
         let identifier = PhotoCollectionViewCell.nameOfClass
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath)
         if let cell = cell as? PhotoCollectionViewCell {
-            cell.setup(with: getPhotos()[indexPath.row])
+            cell.setup(with: getPhotos()[indexPath.row].imgSrc)
             return cell
         }
         return UICollectionViewCell()
@@ -57,5 +57,10 @@ extension PhotoGalleryCollectionViewAdapter: UICollectionViewDelegate, UICollect
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         presenter.photoItemPressed(with: getPhotos()[indexPath.row])
+    }
+
+    // swiftlint:disable:next line_length
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: Int(collectionView.frame.width/3), height: Int(collectionView.frame.width/2))
     }
 }

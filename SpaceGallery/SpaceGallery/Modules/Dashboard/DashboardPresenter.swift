@@ -14,6 +14,7 @@ class DashboardPresenter {
     weak var view: IDashboardView?
     var router: IDashboardRouter?
     var interactor: IDashboardInteractor?
+    private var layoutGenerator = GalleryCollectionViewLayoutGenerator()
     private var currentPage: Int = 0
     private var photos: [Photo] = [Photo]()
 }
@@ -21,6 +22,7 @@ class DashboardPresenter {
 extension DashboardPresenter: IDashboardPresenter {
     func viewDidLoad() {
         view?.showProgressHUD()
+        view?.setLayout(from: layoutGenerator)
         interactor?.retrievePhotos(from: currentPage)
     }
 

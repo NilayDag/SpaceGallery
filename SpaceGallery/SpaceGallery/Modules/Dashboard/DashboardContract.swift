@@ -9,6 +9,7 @@
 import Foundation
 
 protocol IDashboardView: IBaseView {
+    func setLayout(from generator: GalleryCollectionViewLayoutGenerator)
     func reloadCollectionView()
 }
 

@@ -37,6 +37,10 @@ class DashboardViewController: UIViewController, StoryboardLoadable {
 }
 
 extension DashboardViewController: IDashboardView {
+    func setLayout(from generator: GalleryCollectionViewLayoutGenerator) {
+        photoGalleryCollectionView.collectionViewLayout = generator.generateLayout()
+    }
+
     func reloadCollectionView() {
         photoGalleryCollectionView.reloadData()
     }
