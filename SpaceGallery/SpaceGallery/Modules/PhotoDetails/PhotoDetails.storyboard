@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d8s-zC-T2t">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -17,29 +17,29 @@
                         <viewControllerLayoutGuide type="bottom" id="Fue-mU-seb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IFj-I9-EFs">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xDs-4L-sE9" userLabel="Photo Image View">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="513"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="480"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="750" constant="394" id="aVT-Ry-tF1"/>
                                     <constraint firstAttribute="height" priority="750" constant="513" id="m7y-Q6-pbJ"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfH-r1-53L" userLabel="Info Card View">
-                                <rect key="frame" x="56.666666666666657" y="542" width="315" height="244"/>
+                                <rect key="frame" x="37.666666666666657" y="509" width="315" height="281"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="eXX-3a-HZA">
-                                        <rect key="frame" x="0.0" y="5" width="315" height="234"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eXX-3a-HZA">
+                                        <rect key="frame" x="0.0" y="5" width="315" height="271"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p9e-Oi-OU4" userLabel="Date Section View">
-                                                <rect key="frame" x="0.0" y="0.0" width="315" height="29"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="41"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWS-Wa-F0Z" userLabel="Date Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="29"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="41"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="29" id="arH-OT-aQQ"/>
+                                                            <constraint firstAttribute="height" constant="41" id="arH-OT-aQQ"/>
                                                             <constraint firstAttribute="width" constant="118" id="wLh-P8-kWh"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
@@ -47,9 +47,9 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aY-fW-Eom" userLabel="Date Value Label">
-                                                        <rect key="frame" x="176" y="0.0" width="139" height="29"/>
+                                                        <rect key="frame" x="176" y="0.0" width="139" height="41"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="29" id="org-cx-OCk"/>
+                                                            <constraint firstAttribute="height" constant="41" id="org-cx-OCk"/>
                                                             <constraint firstAttribute="width" constant="139" id="tmf-JE-XjU"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
@@ -71,22 +71,22 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e3H-K4-WUH" userLabel="Vehicle Section View">
-                                                <rect key="frame" x="0.0" y="41" width="315" height="29"/>
+                                                <rect key="frame" x="0.0" y="46" width="315" height="41"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehicle Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OP3-Fg-I9G" userLabel="Vehicle Name Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="29"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="41"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="118" id="i2J-iw-vMS"/>
-                                                            <constraint firstAttribute="height" constant="29" id="rra-oe-Nu7"/>
+                                                            <constraint firstAttribute="height" constant="41" id="rra-oe-Nu7"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehicle" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8g-P1-gZn" userLabel="Vehicle Name Value Label">
-                                                        <rect key="frame" x="176" y="0.0" width="139" height="29"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehicle" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8g-P1-gZn" userLabel="Vehicle Name Value Label">
+                                                        <rect key="frame" x="168" y="0.0" width="139" height="41"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="29" id="9wg-En-cqC"/>
+                                                            <constraint firstAttribute="height" constant="41" id="9wg-En-cqC"/>
                                                             <constraint firstAttribute="width" constant="139" id="UiZ-5w-wMu"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
@@ -96,7 +96,7 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="g8g-P1-gZn" secondAttribute="trailing" id="46W-um-NxY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="g8g-P1-gZn" secondAttribute="trailing" constant="8" id="46W-um-NxY"/>
                                                     <constraint firstAttribute="bottom" secondItem="OP3-Fg-I9G" secondAttribute="bottom" id="K1c-5X-GjT"/>
                                                     <constraint firstItem="OP3-Fg-I9G" firstAttribute="centerY" secondItem="e3H-K4-WUH" secondAttribute="centerY" id="Nbl-1w-ShS"/>
                                                     <constraint firstItem="OP3-Fg-I9G" firstAttribute="leading" secondItem="e3H-K4-WUH" secondAttribute="leading" id="eX8-fI-odA"/>
@@ -108,12 +108,12 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mEA-34-oJF" userLabel="Camera Section View">
-                                                <rect key="frame" x="0.0" y="82" width="315" height="29"/>
+                                                <rect key="frame" x="0.0" y="92" width="315" height="41"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera Type:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zn-PP-vw2" userLabel="Camera Type Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="29"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="41"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="29" id="dbm-XF-zhl"/>
+                                                            <constraint firstAttribute="height" constant="41" id="dbm-XF-zhl"/>
                                                             <constraint firstAttribute="width" constant="118" id="v6e-O7-3ah"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
@@ -121,10 +121,10 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera Type" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tB-pu-U3A" userLabel="Camera Type Value Label">
-                                                        <rect key="frame" x="176" y="0.0" width="139" height="29"/>
+                                                        <rect key="frame" x="176" y="0.0" width="139" height="41"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="139" id="RQp-cF-RLl"/>
-                                                            <constraint firstAttribute="height" constant="29" id="gEy-Q1-nlk"/>
+                                                            <constraint firstAttribute="height" constant="41" id="gEy-Q1-nlk"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                         <nil key="textColor"/>
@@ -145,22 +145,22 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgp-Ty-rwv" userLabel="Mission Section View">
-                                                <rect key="frame" x="0.0" y="123" width="315" height="29"/>
+                                                <rect key="frame" x="0.0" y="138" width="315" height="41"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mission Status:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jc5-45-jjD" userLabel="Mission Status Label">
-                                                        <rect key="frame" x="2" y="0.0" width="118" height="29"/>
+                                                        <rect key="frame" x="2" y="0.0" width="118" height="41"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="118" id="3Oi-8G-meh"/>
-                                                            <constraint firstAttribute="height" constant="29" id="gna-B0-q3C"/>
+                                                            <constraint firstAttribute="height" constant="41" id="gna-B0-q3C"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mission Status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0l-Zb-0wn" userLabel="Mission Status Value Label">
-                                                        <rect key="frame" x="176" y="0.0" width="139" height="29"/>
+                                                        <rect key="frame" x="176" y="0.0" width="139" height="41"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="29" id="5ST-Jh-RkL"/>
+                                                            <constraint firstAttribute="height" constant="41" id="5ST-Jh-RkL"/>
                                                             <constraint firstAttribute="width" constant="139" id="6iW-MM-5ZE"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
@@ -182,23 +182,23 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEo-Ka-Bnn" userLabel="Launch Date Section View">
-                                                <rect key="frame" x="0.0" y="164" width="315" height="29"/>
+                                                <rect key="frame" x="0.0" y="184" width="315" height="41"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch Date:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZg-6v-HfA" userLabel="Launch Date Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="29"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="41"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="118" id="9xx-7V-V88"/>
-                                                            <constraint firstAttribute="height" constant="29" id="tqT-bI-Kgj"/>
+                                                            <constraint firstAttribute="height" constant="41" id="tqT-bI-Kgj"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acy-L1-4GB" userLabel="Launch Date Value Label">
-                                                        <rect key="frame" x="176" y="0.0" width="139" height="29"/>
+                                                        <rect key="frame" x="176" y="0.0" width="139" height="41"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="139" id="6dz-ay-UKM"/>
-                                                            <constraint firstAttribute="height" constant="29" id="L81-cw-tgy"/>
+                                                            <constraint firstAttribute="height" constant="41" id="L81-cw-tgy"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                         <nil key="textColor"/>
@@ -219,23 +219,23 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZG-xb-MFW" userLabel="Landing Date Section View">
-                                                <rect key="frame" x="0.0" y="205" width="315" height="29"/>
+                                                <rect key="frame" x="0.0" y="230" width="315" height="41"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Landing Date:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exB-wc-xlW" userLabel="Landing Date Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="29"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="41"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="118" id="Dwc-CE-DZE"/>
-                                                            <constraint firstAttribute="height" constant="29" id="hZc-GB-sIC"/>
+                                                            <constraint firstAttribute="height" constant="41" id="hZc-GB-sIC"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Landing" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nr7-P1-eGh" userLabel="Landing Date Value Label">
-                                                        <rect key="frame" x="176" y="0.0" width="139" height="29"/>
+                                                        <rect key="frame" x="176" y="0.0" width="139" height="41"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="139" id="MSj-zy-i5b"/>
-                                                            <constraint firstAttribute="height" constant="29" id="PVg-Pp-5kP"/>
+                                                            <constraint firstAttribute="height" constant="41" id="PVg-Pp-5kP"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                         <nil key="textColor"/>
@@ -317,7 +317,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iqd-wc-fRj" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-70.769230769230774" y="81.042654028436019"/>
+            <point key="canvasLocation" x="-71.495327102803728" y="80.993520518358537"/>
         </scene>
     </scenes>
     <resources>
