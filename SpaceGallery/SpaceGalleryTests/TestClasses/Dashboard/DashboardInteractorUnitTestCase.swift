@@ -1,14 +1,13 @@
 //
-//  SpaceGalleryTests.swift
+//  DashboardInteractorUnitTestCase.swift
 //  SpaceGalleryTests
 //
-//  Created by Nilay Dagdemir on 23.01.2022.
+//  Created by Nilay Dagdemir on 25.01.2022.
 //
 
 import XCTest
-@testable import SpaceGallery
 
-class SpaceGalleryTests: XCTestCase {
+class DashboardInteractorUnitTestCase: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
