@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "OHHTTPStubs",
+        "repositoryURL": "https://github.com/AliSoftware/OHHTTPStubs.git",
+        "state": {
+          "branch": "master",
+          "revision": "12f19662426d0434d6c330c6974d53e2eb10ecd9",
+          "version": null
+        }
+      },
+      {
         "package": "SDWebImage",
         "repositoryURL": "https://github.com/SDWebImage/SDWebImage.git",
         "state": {

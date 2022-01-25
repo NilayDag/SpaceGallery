@@ -21,6 +21,19 @@
 		3122DC0727A04C090083020B /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DC0627A04C080083020B /* PopoverViewController.swift */; };
 		3122DC0927A04C120083020B /* Popover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3122DC0827A04C120083020B /* Popover.storyboard */; };
 		3122DC0B27A057EF0083020B /* FilterOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DC0A27A057EF0083020B /* FilterOption.swift */; };
+		3122DC1D27A08F310083020B /* OHHTTPStubs in Frameworks */ = {isa = PBXBuildFile; productRef = 3122DC1C27A08F310083020B /* OHHTTPStubs */; };
+		3122DC1F27A08F310083020B /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3122DC1E27A08F310083020B /* OHHTTPStubsSwift */; };
+		3122DC2327A08FC10083020B /* curiosityPhotos.json in Resources */ = {isa = PBXBuildFile; fileRef = 3122DC2227A08FC10083020B /* curiosityPhotos.json */; };
+		3122DC2627A08FFC0083020B /* spiritPhotos.json in Resources */ = {isa = PBXBuildFile; fileRef = 3122DC2427A08FFC0083020B /* spiritPhotos.json */; };
+		3122DC2727A08FFC0083020B /* opportunityPhotos.json in Resources */ = {isa = PBXBuildFile; fileRef = 3122DC2527A08FFC0083020B /* opportunityPhotos.json */; };
+		3122DC2D27A090570083020B /* XCTestCase+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DC2C27A090570083020B /* XCTestCase+Ext.swift */; };
+		3122DC3227A0908C0083020B /* DashboardViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DC3127A0908C0083020B /* DashboardViewMock.swift */; };
+		3122DC3427A090930083020B /* DashboardPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DC3327A090930083020B /* DashboardPresenterMock.swift */; };
+		3122DC3627A0909A0083020B /* DashboardRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DC3527A0909A0083020B /* DashboardRouterMock.swift */; };
+		3122DC3827A090A10083020B /* DashboardInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DC3727A090A10083020B /* DashboardInteractorMock.swift */; };
+		3122DC3A27A090AE0083020B /* PhotoDetailsViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DC3927A090AE0083020B /* PhotoDetailsViewMock.swift */; };
+		3122DC3C27A090B50083020B /* PhotoDetailsPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DC3B27A090B50083020B /* PhotoDetailsPresenterMock.swift */; };
+		3122DC3E27A090BE0083020B /* PhotoDetailsRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DC3D27A090BE0083020B /* PhotoDetailsRouterMock.swift */; };
 		3191579E279DF9A900706B96 /* PhotoGalleryCollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3191579D279DF9A900706B96 /* PhotoGalleryCollectionViewAdapter.swift */; };
 		319157A1279DFA6700706B96 /* DashboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319157A0279DFA6700706B96 /* DashboardConstants.swift */; };
 		319157A5279DFB4D00706B96 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319157A3279DFB4D00706B96 /* PhotoCollectionViewCell.swift */; };
@@ -88,6 +101,17 @@
 		3122DC0627A04C080083020B /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		3122DC0827A04C120083020B /* Popover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popover.storyboard; sourceTree = "<group>"; };
 		3122DC0A27A057EF0083020B /* FilterOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOption.swift; sourceTree = "<group>"; };
+		3122DC2227A08FC10083020B /* curiosityPhotos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = curiosityPhotos.json; sourceTree = "<group>"; };
+		3122DC2427A08FFC0083020B /* spiritPhotos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spiritPhotos.json; sourceTree = "<group>"; };
+		3122DC2527A08FFC0083020B /* opportunityPhotos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = opportunityPhotos.json; sourceTree = "<group>"; };
+		3122DC2C27A090570083020B /* XCTestCase+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Ext.swift"; sourceTree = "<group>"; };
+		3122DC3127A0908C0083020B /* DashboardViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewMock.swift; sourceTree = "<group>"; };
+		3122DC3327A090930083020B /* DashboardPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPresenterMock.swift; sourceTree = "<group>"; };
+		3122DC3527A0909A0083020B /* DashboardRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRouterMock.swift; sourceTree = "<group>"; };
+		3122DC3727A090A10083020B /* DashboardInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardInteractorMock.swift; sourceTree = "<group>"; };
+		3122DC3927A090AE0083020B /* PhotoDetailsViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewMock.swift; sourceTree = "<group>"; };
+		3122DC3B27A090B50083020B /* PhotoDetailsPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsPresenterMock.swift; sourceTree = "<group>"; };
+		3122DC3D27A090BE0083020B /* PhotoDetailsRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsRouterMock.swift; sourceTree = "<group>"; };
 		3191579D279DF9A900706B96 /* PhotoGalleryCollectionViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryCollectionViewAdapter.swift; sourceTree = "<group>"; };
 		319157A0279DFA6700706B96 /* DashboardConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardConstants.swift; sourceTree = "<group>"; };
 		319157A3279DFB4D00706B96 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -131,6 +155,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				31B1A29A279DE4D10013695A /* SDWebImage in Frameworks */,
+				3122DC1F27A08F310083020B /* OHHTTPStubsSwift in Frameworks */,
+				3122DC1D27A08F310083020B /* OHHTTPStubs in Frameworks */,
 				31B1A297279DE4600013695A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +232,85 @@
 			path = PhotoCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		3122DC2027A08F420083020B /* MockJSONs */ = {
+			isa = PBXGroup;
+			children = (
+				3122DC2127A08F490083020B /* Dashboard */,
+			);
+			path = MockJSONs;
+			sourceTree = "<group>";
+		};
+		3122DC2127A08F490083020B /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				3122DC2227A08FC10083020B /* curiosityPhotos.json */,
+				3122DC2527A08FFC0083020B /* opportunityPhotos.json */,
+				3122DC2427A08FFC0083020B /* spiritPhotos.json */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		3122DC2827A0902D0083020B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3122DC2B27A090470083020B /* XCTestCase */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3122DC2927A090310083020B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3122DC2E27A090670083020B /* Modules */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		3122DC2A27A090360083020B /* TestClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TestClasses;
+			sourceTree = "<group>";
+		};
+		3122DC2B27A090470083020B /* XCTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				3122DC2C27A090570083020B /* XCTestCase+Ext.swift */,
+			);
+			path = XCTestCase;
+			sourceTree = "<group>";
+		};
+		3122DC2E27A090670083020B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3122DC2F27A0906D0083020B /* Dashboard */,
+				3122DC3027A090710083020B /* PhotoDetails */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3122DC2F27A0906D0083020B /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				3122DC3127A0908C0083020B /* DashboardViewMock.swift */,
+				3122DC3327A090930083020B /* DashboardPresenterMock.swift */,
+				3122DC3527A0909A0083020B /* DashboardRouterMock.swift */,
+				3122DC3727A090A10083020B /* DashboardInteractorMock.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		3122DC3027A090710083020B /* PhotoDetails */ = {
+			isa = PBXGroup;
+			children = (
+				3122DC3927A090AE0083020B /* PhotoDetailsViewMock.swift */,
+				3122DC3B27A090B50083020B /* PhotoDetailsPresenterMock.swift */,
+				3122DC3D27A090BE0083020B /* PhotoDetailsRouterMock.swift */,
+			);
+			path = PhotoDetails;
+			sourceTree = "<group>";
+		};
 		3191579C279DF8F500706B96 /* PhotoGalleryCollectionViewAdapter */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +374,9 @@
 		31B1A271279DE1E90013695A /* SpaceGalleryTests */ = {
 			isa = PBXGroup;
 			children = (
+				3122DC2827A0902D0083020B /* Extensions */,
+				3122DC2927A090310083020B /* Mocks */,
+				3122DC2A27A090360083020B /* TestClasses */,
 				31B1A272279DE1E90013695A /* SpaceGalleryTests.swift */,
 			);
 			path = SpaceGalleryTests;
@@ -341,6 +449,7 @@
 		31B1A290279DE2710013695A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3122DC2027A08F420083020B /* MockJSONs */,
 				31B1A264279DE1E90013695A /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -443,6 +552,8 @@
 			packageProductDependencies = (
 				31B1A296279DE4600013695A /* Alamofire */,
 				31B1A299279DE4D10013695A /* SDWebImage */,
+				3122DC1C27A08F310083020B /* OHHTTPStubs */,
+				3122DC1E27A08F310083020B /* OHHTTPStubsSwift */,
 			);
 			productName = SpaceGallery;
 			productReference = 31B1A258279DE1E30013695A /* SpaceGallery.app */;
@@ -519,6 +630,7 @@
 			packageReferences = (
 				31B1A295279DE4600013695A /* XCRemoteSwiftPackageReference "Alamofire" */,
 				31B1A298279DE4D10013695A /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				3122DC1B27A08F310083020B /* XCRemoteSwiftPackageReference "OHHTTPStubs" */,
 			);
 			productRefGroup = 31B1A259279DE1E30013695A /* Products */;
 			projectDirPath = "";
@@ -537,9 +649,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3122DBF9279F1E980083020B /* PhotoDetails.storyboard in Resources */,
+				3122DC2627A08FFC0083020B /* spiritPhotos.json in Resources */,
 				31B1A268279DE1E90013695A /* LaunchScreen.storyboard in Resources */,
 				319157A6279DFB4D00706B96 /* PhotoCollectionViewCell.xib in Resources */,
 				31B1A265279DE1E90013695A /* Assets.xcassets in Resources */,
+				3122DC2327A08FC10083020B /* curiosityPhotos.json in Resources */,
+				3122DC2727A08FFC0083020B /* opportunityPhotos.json in Resources */,
 				3122DC0927A04C120083020B /* Popover.storyboard in Resources */,
 				31B1A2A4279DE9C40013695A /* Dashboard.storyboard in Resources */,
 			);
@@ -630,7 +745,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3122DC3227A0908C0083020B /* DashboardViewMock.swift in Sources */,
+				3122DC3A27A090AE0083020B /* PhotoDetailsViewMock.swift in Sources */,
+				3122DC3627A0909A0083020B /* DashboardRouterMock.swift in Sources */,
+				3122DC3E27A090BE0083020B /* PhotoDetailsRouterMock.swift in Sources */,
+				3122DC3427A090930083020B /* DashboardPresenterMock.swift in Sources */,
+				3122DC3C27A090B50083020B /* PhotoDetailsPresenterMock.swift in Sources */,
+				3122DC2D27A090570083020B /* XCTestCase+Ext.swift in Sources */,
 				31B1A273279DE1E90013695A /* SpaceGalleryTests.swift in Sources */,
+				3122DC3827A090A10083020B /* DashboardInteractorMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -984,6 +1107,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3122DC1B27A08F310083020B /* XCRemoteSwiftPackageReference "OHHTTPStubs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/OHHTTPStubs.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		31B1A295279DE4600013695A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -1003,6 +1134,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3122DC1C27A08F310083020B /* OHHTTPStubs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3122DC1B27A08F310083020B /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubs;
+		};
+		3122DC1E27A08F310083020B /* OHHTTPStubsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3122DC1B27A08F310083020B /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubsSwift;
+		};
 		31B1A296279DE4600013695A /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 31B1A295279DE4600013695A /* XCRemoteSwiftPackageReference "Alamofire" */;
