@@ -17,11 +17,13 @@ class DashboardPresenter {
     private var layoutGenerator = GalleryCollectionViewLayoutGenerator()
     private var currentPage: Int = 0
     private var photos: [Photo] = [Photo]()
+    private var filteringOptions: [FilterOptions] = FilterOptions.allCases
 }
 
 extension DashboardPresenter: IDashboardPresenter {
     func viewDidLoad() {
         view?.showProgressHUD()
+        view?.addFilteringButton()
         view?.setLayout(from: layoutGenerator)
         interactor?.retrievePhotos(from: currentPage)
     }
@@ -33,6 +35,10 @@ extension DashboardPresenter: IDashboardPresenter {
     func photoItemPressed(with pressedItem: Photo) {
         router?.navigateToPhotoDetails(for: pressedItem)
     }
+
+    func onFilterButtonPressed() {
+        view?.showFilteringOptions(with: filteringOptions)
+    }
 }
 
 extension DashboardPresenter: IDashboardInteractorToPresenter {
@@ -42,8 +48,8 @@ extension DashboardPresenter: IDashboardInteractorToPresenter {
     }
 
     func noPhotoFound() {
-        // TODO: show empty state
         view?.hideProgressHUD()
+        // TODO: show empty state
     }
 
     func photosReceived(_ photoList: [Photo]) {

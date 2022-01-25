@@ -18,6 +18,8 @@
 		3122DBFD279F1E980083020B /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DBF7279F1E980083020B /* PhotoDetailsViewController.swift */; };
 		3122DC00279F1FAE0083020B /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DBFF279F1FAE0083020B /* UIColor+Ext.swift */; };
 		3122DC02279F284C0083020B /* PhotoDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DC01279F284C0083020B /* PhotoDetailsRouter.swift */; };
+		3122DC0727A04C090083020B /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DC0627A04C080083020B /* PopoverViewController.swift */; };
+		3122DC0927A04C120083020B /* Popover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3122DC0827A04C120083020B /* Popover.storyboard */; };
 		3191579E279DF9A900706B96 /* PhotoGalleryCollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3191579D279DF9A900706B96 /* PhotoGalleryCollectionViewAdapter.swift */; };
 		319157A1279DFA6700706B96 /* DashboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319157A0279DFA6700706B96 /* DashboardConstants.swift */; };
 		319157A5279DFB4D00706B96 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319157A3279DFB4D00706B96 /* PhotoCollectionViewCell.swift */; };
@@ -82,6 +84,8 @@
 		3122DBF7279F1E980083020B /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
 		3122DBFF279F1FAE0083020B /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		3122DC01279F284C0083020B /* PhotoDetailsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailsRouter.swift; sourceTree = "<group>"; };
+		3122DC0627A04C080083020B /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		3122DC0827A04C120083020B /* Popover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popover.storyboard; sourceTree = "<group>"; };
 		3191579D279DF9A900706B96 /* PhotoGalleryCollectionViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryCollectionViewAdapter.swift; sourceTree = "<group>"; };
 		319157A0279DFA6700706B96 /* DashboardConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardConstants.swift; sourceTree = "<group>"; };
 		319157A3279DFB4D00706B96 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -172,6 +176,23 @@
 				3122DBF3279F1E980083020B /* PhotoDetails.storyboard */,
 			);
 			path = PhotoDetails;
+			sourceTree = "<group>";
+		};
+		3122DC0327A04BD30083020B /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				3122DC0527A04BE90083020B /* PopoverView */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		3122DC0527A04BE90083020B /* PopoverView */ = {
+			isa = PBXGroup;
+			children = (
+				3122DC0627A04C080083020B /* PopoverViewController.swift */,
+				3122DC0827A04C120083020B /* Popover.storyboard */,
+			);
+			path = PopoverView;
 			sourceTree = "<group>";
 		};
 		3191579C279DF8F500706B96 /* PhotoGalleryCollectionViewAdapter */ = {
@@ -299,6 +320,7 @@
 		31B1A28F279DE26A0013695A /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				3122DC0327A04BD30083020B /* ReusableViews */,
 				3122DBEF279F0E900083020B /* GalleryCollectionViewLayoutGenerator */,
 				3122DBE6279F04DA0083020B /* Constants */,
 				31B1A2AA279DEA3A0013695A /* BaseProtocols */,
@@ -507,6 +529,7 @@
 				31B1A268279DE1E90013695A /* LaunchScreen.storyboard in Resources */,
 				319157A6279DFB4D00706B96 /* PhotoCollectionViewCell.xib in Resources */,
 				31B1A265279DE1E90013695A /* Assets.xcassets in Resources */,
+				3122DC0927A04C120083020B /* Popover.storyboard in Resources */,
 				31B1A2A4279DE9C40013695A /* Dashboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -555,6 +578,7 @@
 			files = (
 				3122DBE8279F04E30083020B /* Constants.swift in Sources */,
 				31B1A2A5279DE9C40013695A /* DashboardContract.swift in Sources */,
+				3122DC0727A04C090083020B /* PopoverViewController.swift in Sources */,
 				3122DBFB279F1E980083020B /* PhotoDetailsPresenter.swift in Sources */,
 				31B1A2BE279DEDC50013695A /* APIProvider.swift in Sources */,
 				319157A1279DFA6700706B96 /* DashboardConstants.swift in Sources */,

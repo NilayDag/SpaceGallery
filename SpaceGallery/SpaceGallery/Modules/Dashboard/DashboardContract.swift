@@ -10,12 +10,15 @@ import Foundation
 
 protocol IDashboardView: IBaseView {
     func setLayout(from generator: GalleryCollectionViewLayoutGenerator)
+    func addFilteringButton()
     func reloadCollectionView()
+    func showFilteringOptions(with options: [FilterOptions])
 }
 
 protocol IDashboardPresenter: IBasePresenter {
     func getPhotos() -> [Photo]
     func photoItemPressed(with pressedItem: Photo)
+    func onFilterButtonPressed()
 }
 
 protocol IDashboardInteractor: AnyObject {
