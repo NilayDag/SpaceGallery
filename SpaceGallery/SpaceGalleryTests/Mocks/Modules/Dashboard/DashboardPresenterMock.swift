@@ -19,6 +19,9 @@ class DashboardPresenterMock {
     var filterPhotosCalled = false
     var photoItemPressedCalled = false
     var onLoadMoreCalled = false
+    var wsErrorOccurredCalled = false
+    var noPhotoFoundCalled = false
+    var photosReceivedCalled = false
 
     private var currentPage: Int = 1
     private var isPaginating: Bool = false
