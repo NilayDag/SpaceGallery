@@ -25,7 +25,6 @@ extension DashboardInteractor: IDashboardInteractor {
                 if photos.isEmpty {
                     self.output?.noPhotoFound()
                 } else {
-//                    self.output?.increaseCurrentPage()
                     self.output?.photosReceived(photos)
                 }
             } else {

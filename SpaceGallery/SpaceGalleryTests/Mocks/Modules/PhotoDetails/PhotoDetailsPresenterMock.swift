@@ -6,3 +6,22 @@
 //
 
 import Foundation
+
+@testable import SpaceGallery
+class PhotoDetailsPresenterMock {
+    // MARK: - Called Properties
+    var setPhotoItemCalled = false
+
+    // MARK: - Properties
+    private var photoItem: Photo?
+}
+
+extension PhotoDetailsPresenterMock: IPhotoDetailsPresenter {
+
+    func viewDidLoad() {}
+
+    func setPhotoItem(to item: Photo) {
+        setPhotoItemCalled = true
+        photoItem = item
+    }
+}

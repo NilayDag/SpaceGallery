@@ -9,10 +9,10 @@ import UIKit
 
 @testable import SpaceGallery
 public class DashboardViewMock: IDashboardView {
-    // MARK: Properties
+    // MARK: - Properties
     var isProgressShowing = false
 
-    // MARK: Called Properties
+    // MARK: - Called Properties
     var showErrorDialogCalled = false
     var reloadCollectionViewCalled = false
     var setLayoutCalled = false
