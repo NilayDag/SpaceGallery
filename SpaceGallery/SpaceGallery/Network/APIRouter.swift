@@ -10,7 +10,7 @@ import Alamofire
 
 enum APIRouter: URLRequestConvertible {
 
-    case retrievePhotos(page: Int)
+    case retrievePhotos(page: Int, filterOption: FilterOption)
 
     // MARK: - HTTPMethod
     private var method: HTTPMethod {
@@ -23,8 +23,8 @@ enum APIRouter: URLRequestConvertible {
     // MARK: - Path
     private var path: String {
         switch self {
-        case .retrievePhotos:
-            return "mars-photos/api/v1/rovers/curiosity/photos"
+        case .retrievePhotos(_, let filterOption):
+            return "mars-photos/api/v1/rovers/\(filterOption.title)/photos"
         }
     }
 
@@ -41,7 +41,7 @@ enum APIRouter: URLRequestConvertible {
     // MARK: - Parameters
     private var parameters: Parameters? {
         switch self {
-        case .retrievePhotos(let page):
+        case .retrievePhotos(let page, _):
             return ["sol": WSConfig.solValue,
                     "api_key": WSConfig.apiKey,
                     "page": page]

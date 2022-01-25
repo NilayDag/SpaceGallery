@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jWm-L3-KnR" userLabel="Photo Gallery Collection View">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YtG-cp-avE">
                                     <size key="itemSize" width="128" height="128"/>
@@ -34,10 +34,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Fue-mU-seb" firstAttribute="top" secondItem="jWm-L3-KnR" secondAttribute="bottom" constant="-34" id="Ccb-eT-Bfj"/>
+                            <constraint firstAttribute="bottom" secondItem="jWm-L3-KnR" secondAttribute="bottom" id="Ccb-eT-Bfj"/>
                             <constraint firstItem="jWm-L3-KnR" firstAttribute="leading" secondItem="IFj-I9-EFs" secondAttribute="leading" id="E3u-Fe-Mor"/>
                             <constraint firstAttribute="trailing" secondItem="jWm-L3-KnR" secondAttribute="trailing" id="Ij5-Ep-IOw"/>
-                            <constraint firstItem="jWm-L3-KnR" firstAttribute="top" secondItem="wT6-ai-9nW" secondAttribute="bottom" constant="-44" id="jXH-Kc-LgX"/>
+                            <constraint firstItem="jWm-L3-KnR" firstAttribute="top" secondItem="wT6-ai-9nW" secondAttribute="bottom" id="jXH-Kc-LgX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="i2Z-2f-Val"/>

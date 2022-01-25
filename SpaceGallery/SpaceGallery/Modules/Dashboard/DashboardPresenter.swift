@@ -17,27 +17,34 @@ class DashboardPresenter {
     private var layoutGenerator = GalleryCollectionViewLayoutGenerator()
     private var currentPage: Int = 0
     private var photos: [Photo] = [Photo]()
-    private var filteringOptions: [FilterOptions] = FilterOptions.allCases
+    private var filteringOptions: [FilterOption] = FilterOption.allCases
 }
 
 extension DashboardPresenter: IDashboardPresenter {
     func viewDidLoad() {
         view?.showProgressHUD()
         view?.addFilteringButton()
+        view?.setFilterOptions(to: filteringOptions)
         view?.setLayout(from: layoutGenerator)
-        interactor?.retrievePhotos(from: currentPage)
+        view?.hideProgressHUD()
     }
 
     func getPhotos() -> [Photo] {
         photos
     }
 
-    func photoItemPressed(with pressedItem: Photo) {
-        router?.navigateToPhotoDetails(for: pressedItem)
+    func onFilterButtonPressed() {
+        view?.openFilterOptionsPopover()
     }
 
-    func onFilterButtonPressed() {
-        view?.showFilteringOptions(with: filteringOptions)
+    func filterPhotos(with option: FilterOption) {
+        view?.hideFilterOptionsPopover()
+        view?.showProgressHUD()
+        interactor?.retrievePhotos(from: currentPage, with: option)
+    }
+
+    func photoItemPressed(with pressedItem: Photo) {
+        router?.navigateToPhotoDetails(for: pressedItem)
     }
 }
 

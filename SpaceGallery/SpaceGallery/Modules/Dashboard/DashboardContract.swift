@@ -11,18 +11,21 @@ import Foundation
 protocol IDashboardView: IBaseView {
     func setLayout(from generator: GalleryCollectionViewLayoutGenerator)
     func addFilteringButton()
+    func setFilterOptions(to options: [FilterOption])
+    func openFilterOptionsPopover()
+    func hideFilterOptionsPopover()
     func reloadCollectionView()
-    func showFilteringOptions(with options: [FilterOptions])
 }
 
 protocol IDashboardPresenter: IBasePresenter {
     func getPhotos() -> [Photo]
-    func photoItemPressed(with pressedItem: Photo)
     func onFilterButtonPressed()
+    func filterPhotos(with options: FilterOption)
+    func photoItemPressed(with pressedItem: Photo)
 }
 
 protocol IDashboardInteractor: AnyObject {
-    func retrievePhotos(from pageNumber: Int)
+    func retrievePhotos(from pageNumber: Int, with filterOption: FilterOption)
 }
 
 protocol IDashboardInteractorToPresenter: IBaseInteractorToPresenter {

@@ -62,21 +62,27 @@ extension DashboardViewController: IDashboardView {
         navigationItem.rightBarButtonItem = filterButton
     }
 
-    func showFilteringOptions(with options: [FilterOptions]) {
+    func setFilterOptions(to options: [FilterOption]) {
         popoverViewControler?.setupOptions(from: options)
         popoverViewControler?.delegate = self
         popoverViewControler?.modalPresentationStyle = .popover
+    }
+
+    func openFilterOptionsPopover() {
         guard let popoverPresentationController = popoverViewControler?.popoverPresentationController else { return }
-        popoverPresentationController.barButtonItem = menuBarButtonItem
         popoverPresentationController.delegate = self
-        self.present(popoverViewControler ?? UIViewController(), animated: true, completion: nil)
+        popoverPresentationController.barButtonItem = menuBarButtonItem
+        present(popoverViewControler ?? UIViewController(), animated: true, completion: nil)
+    }
+
+    func hideFilterOptionsPopover() {
+        popoverViewControler?.dismiss(animated: true, completion: nil)
     }
 }
 
 extension DashboardViewController: PopoverViewDelegate {
-    func buttonPressed(_ sender: FilterOptions) {
-        print("here w sender: \(sender)")
-        // TODO: filter photos with sender
+    func buttonPressed(_ sender: FilterOption) {
+        presenter?.filterPhotos(with: sender)
     }
 }
 

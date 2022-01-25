@@ -8,7 +8,7 @@
 import UIKit
 
 protocol PopoverViewDelegate: AnyObject {
-    func buttonPressed(_ sender: FilterOptions)
+    func buttonPressed(_ sender: FilterOption)
 }
 
 class PopoverViewController: UIViewController, StoryboardLoadable {
@@ -18,8 +18,8 @@ class PopoverViewController: UIViewController, StoryboardLoadable {
     weak var delegate: PopoverViewDelegate?
 
     // MARK: - Properties
-    private var options: [FilterOptions] = [FilterOptions]()
-    func setupOptions(from options: [FilterOptions]) {
+    private var options: [FilterOption] = [FilterOption]()
+    func setupOptions(from options: [FilterOption]) {
         self.options = options
         options.forEach { option in
             let button = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 40))

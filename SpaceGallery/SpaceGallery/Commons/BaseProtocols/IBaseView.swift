@@ -24,10 +24,12 @@ extension UIViewController: IBaseView {
     }
 
     func showProgressHUD() {
+        view.isUserInteractionEnabled = false
         LoadingManager.shared.showLoadingProgress()
     }
 
     func hideProgressHUD() {
+        view.isUserInteractionEnabled = true
         LoadingManager.shared.hideLoadingProgress()
     }
 
