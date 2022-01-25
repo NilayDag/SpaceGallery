@@ -12,14 +12,14 @@ protocol APIClientInterface {
     typealias OnError = ((WSError?) -> Void)?
 
     func retrievePhotos(page: Int,
-                        with filterOption: FilterOption,
+                        with filterOption: String,
                         onSuccess: @escaping OnSuccess<PhotoList>,
                         onError: OnError)
 }
 
 class APIClient: APIClientInterface {
     func retrievePhotos(page: Int,
-                        with filterOption: FilterOption,
+                        with filterOption: String,
                         onSuccess: @escaping OnSuccess<PhotoList>,
                         onError: OnError) {
         APIProvider.shared.performRequest(route: .retrievePhotos(page: page, filterOption: filterOption),

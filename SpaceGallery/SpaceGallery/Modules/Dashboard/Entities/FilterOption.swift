@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum FilterOption: CaseIterable {
+public enum FilterOption: String, CaseIterable {
     case curiosity, opportunity, spirit
 
     var title: String {

@@ -6,15 +6,16 @@
 //  
 //
 
-import Foundation
+import UIKit
 
 protocol IDashboardView: IBaseView {
-    func setLayout(from generator: GalleryCollectionViewLayoutGenerator)
     func addFilteringButton()
     func setFilterOptions(to options: [FilterOption])
+    func setLayout(from generator: GalleryCollectionViewLayoutGenerator)
     func openFilterOptionsPopover()
     func hideFilterOptionsPopover()
     func reloadCollectionView()
+    func collectionViewScrolled(with position: CGFloat)
 }
 
 protocol IDashboardPresenter: IBasePresenter {
@@ -22,6 +23,7 @@ protocol IDashboardPresenter: IBasePresenter {
     func onFilterButtonPressed()
     func filterPhotos(with options: FilterOption)
     func photoItemPressed(with pressedItem: Photo)
+    func onLoadMore()
 }
 
 protocol IDashboardInteractor: AnyObject {

@@ -10,7 +10,7 @@ import Alamofire
 
 enum APIRouter: URLRequestConvertible {
 
-    case retrievePhotos(page: Int, filterOption: FilterOption)
+    case retrievePhotos(page: Int, filterOption: String)
 
     // MARK: - HTTPMethod
     private var method: HTTPMethod {
@@ -24,7 +24,7 @@ enum APIRouter: URLRequestConvertible {
     private var path: String {
         switch self {
         case .retrievePhotos(_, let filterOption):
-            return "mars-photos/api/v1/rovers/\(filterOption.title)/photos"
+            return "mars-photos/api/v1/rovers/\(filterOption)/photos"
         }
     }
 
@@ -67,6 +67,7 @@ enum APIRouter: URLRequestConvertible {
         } catch {
             throw AFError.parameterEncodingFailed(reason: .jsonEncodingFailed(error: error))
         }
+        print("here url req: \(urlRequest)")
         return urlRequest
     }
 }

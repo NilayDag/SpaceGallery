@@ -18,7 +18,7 @@ class DashboardInteractor {
 extension DashboardInteractor: IDashboardInteractor {
     func retrievePhotos(from pageNumber: Int, with filterOption: FilterOption) {
         apiClient?.retrievePhotos(page: pageNumber,
-                                  with: filterOption,
+                                  with: filterOption.rawValue,
                                   onSuccess: { [weak self] response in
             guard let self = self else { return }
             if let photos = response.results?.photos {

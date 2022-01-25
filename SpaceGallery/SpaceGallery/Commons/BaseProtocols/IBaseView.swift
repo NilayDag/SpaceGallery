@@ -37,6 +37,5 @@ extension UIViewController: IBaseView {
         let alert = UIAlertController(title: "Warning", message: message, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         present(alert, animated: true, completion: nil)
-
     }
 }

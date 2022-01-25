@@ -197,6 +197,15 @@
 			path = PopoverView;
 			sourceTree = "<group>";
 		};
+		3122DC0C27A06EC90083020B /* PhotoCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				319157A3279DFB4D00706B96 /* PhotoCollectionViewCell.swift */,
+				319157A4279DFB4D00706B96 /* PhotoCollectionViewCell.xib */,
+			);
+			path = PhotoCollectionViewCell;
+			sourceTree = "<group>";
+		};
 		3191579C279DF8F500706B96 /* PhotoGalleryCollectionViewAdapter */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,8 +226,7 @@
 		319157A2279DFB3D00706B96 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				319157A3279DFB4D00706B96 /* PhotoCollectionViewCell.swift */,
-				319157A4279DFB4D00706B96 /* PhotoCollectionViewCell.xib */,
+				3122DC0C27A06EC90083020B /* PhotoCollectionViewCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";

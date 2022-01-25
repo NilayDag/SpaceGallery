@@ -52,7 +52,7 @@ extension DashboardViewController: IDashboardView {
     }
 
     func addFilteringButton() {
-        guard let menuIcon = UIImage(named: DashboardConstants.menuIconName) else { return }
+        guard let menuIcon = UIImage(named: DashboardConstants.menuIconName) else { return }
         let filterButton = UIBarButtonItem(image: menuIcon,
                                            style: .plain,
                                            target: self,
@@ -77,6 +77,13 @@ extension DashboardViewController: IDashboardView {
 
     func hideFilterOptionsPopover() {
         popoverViewControler?.dismiss(animated: true, completion: nil)
+    }
+
+    func collectionViewScrolled(with position: CGFloat) {
+        // swiftlint:disable:next line_length
+        if position > photoGalleryCollectionView.contentSize.height - DashboardConstants.minScrollValueForLoadMore - photoGalleryCollectionView.frame.size.height {
+            presenter?.onLoadMore()
+        }
     }
 }
 

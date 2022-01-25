@@ -9,8 +9,10 @@ import UIKit
 
 class PhotoGalleryCollectionViewAdapter: NSObject {
     private let presenter: IDashboardPresenter
+    private let view: IDashboardView
 
-    init(presenter: IDashboardPresenter) {
+    init(view: IDashboardView, presenter: IDashboardPresenter) {
+        self.view = view
         self.presenter = presenter
     }
 }
@@ -57,5 +59,12 @@ extension PhotoGalleryCollectionViewAdapter: UICollectionViewDelegate, UICollect
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         presenter.photoItemPressed(with: getPhotos()[indexPath.row])
+    }
+}
+
+extension PhotoGalleryCollectionViewAdapter: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let position = scrollView.contentOffset.y
+        view.collectionViewScrolled(with: position)
     }
 }

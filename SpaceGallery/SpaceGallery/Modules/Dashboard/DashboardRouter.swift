@@ -20,7 +20,7 @@ class DashboardRouter {
         let router = DashboardRouter()
         let interactor = DashboardInteractor()
         let apiClient = APIClient()
-        let adapter = PhotoGalleryCollectionViewAdapter(presenter: presenter)
+        let adapter = PhotoGalleryCollectionViewAdapter(view: viewController, presenter: presenter)
 
         viewController.presenter =  presenter
         viewController.adapter = adapter

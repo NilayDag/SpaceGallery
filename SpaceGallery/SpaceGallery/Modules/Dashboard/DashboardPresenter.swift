@@ -15,7 +15,10 @@ class DashboardPresenter {
     var router: IDashboardRouter?
     var interactor: IDashboardInteractor?
     private var layoutGenerator = GalleryCollectionViewLayoutGenerator()
-    private var currentPage: Int = 0
+    private var currentPage: Int = 1
+    private var isPaginating: Bool = false
+    private var doesHavePhotoToFetch: Bool = true
+    private var currentFilterOption: FilterOption?
     private var photos: [Photo] = [Photo]()
     private var filteringOptions: [FilterOption] = FilterOption.allCases
 }
@@ -40,11 +43,22 @@ extension DashboardPresenter: IDashboardPresenter {
     func filterPhotos(with option: FilterOption) {
         view?.hideFilterOptionsPopover()
         view?.showProgressHUD()
+        currentFilterOption = option
+        photos.removeAll()
+        currentPage = 1
         interactor?.retrievePhotos(from: currentPage, with: option)
     }
 
     func photoItemPressed(with pressedItem: Photo) {
         router?.navigateToPhotoDetails(for: pressedItem)
+    }
+
+    func onLoadMore() {
+        if !isPaginating, doesHavePhotoToFetch,
+           let filterOption = currentFilterOption {
+            interactor?.retrievePhotos(from: currentPage, with: filterOption)
+            isPaginating = true
+        }
     }
 }
 
@@ -52,16 +66,25 @@ extension DashboardPresenter: IDashboardInteractorToPresenter {
     func wsErrorOccurred(with message: String) {
         view?.hideProgressHUD()
         view?.showErrorDialog(with: message)
+        isPaginating = false
     }
 
     func noPhotoFound() {
         view?.hideProgressHUD()
+        isPaginating = false
         // TODO: show empty state
     }
 
     func photosReceived(_ photoList: [Photo]) {
-        photos = photoList
-        view?.hideProgressHUD()
-        view?.reloadCollectionView()
+        if photoList.isEmpty {
+            doesHavePhotoToFetch = false
+        } else {
+            photos.append(contentsOf: photoList)
+            isPaginating = false
+            doesHavePhotoToFetch = true
+            currentPage += 1
+            view?.hideProgressHUD()
+            view?.reloadCollectionView()
+        }
     }
 }
