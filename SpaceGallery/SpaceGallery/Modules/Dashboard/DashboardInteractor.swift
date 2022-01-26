@@ -12,7 +12,7 @@ class DashboardInteractor {
 
     // MARK: Properties
     weak var output: IDashboardInteractorToPresenter?
-    var apiClient: APIClient?
+    var apiClient: APIClientInterface?
 }
 
 extension DashboardInteractor: IDashboardInteractor {

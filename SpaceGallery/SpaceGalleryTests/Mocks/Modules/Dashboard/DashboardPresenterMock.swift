@@ -72,6 +72,7 @@ extension DashboardPresenterMock: IDashboardInteractorToPresenter {
     func noPhotoFound() {
         noPhotoFoundCalled = true
         isPaginating = false
+        expectation?.fulfill()
     }
 
     func photosReceived(_ photoList: [Photo]) {
