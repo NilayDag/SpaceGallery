@@ -20,7 +20,6 @@ class DashboardPresenterMock {
     var photoItemPressedCalled = false
     var onLoadMoreCalled = false
     var wsErrorOccurredCalled = false
-    var noPhotoFoundCalled = false
     var photosReceivedCalled = false
 
     private var currentPage: Int = 1
@@ -66,12 +65,6 @@ extension DashboardPresenterMock: IDashboardPresenter {
 extension DashboardPresenterMock: IDashboardInteractorToPresenter {
     func wsErrorOccurred(with message: String) {
         wsErrorOccurredCalled = true
-        expectation?.fulfill()
-    }
-
-    func noPhotoFound() {
-        noPhotoFoundCalled = true
-        isPaginating = false
         expectation?.fulfill()
     }
 

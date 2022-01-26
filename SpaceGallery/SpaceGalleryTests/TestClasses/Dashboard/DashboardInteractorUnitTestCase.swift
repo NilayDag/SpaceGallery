@@ -49,8 +49,6 @@ class DashboardInteractorUnitTestCase: XCTestCase {
                       "photosReceivedCalled function should be called")
         XCTAssertGreaterThan(presenter.getPhotos().count, 0,
                              "Photo items should be retrieved from interactor")
-        XCTAssertFalse(presenter.noPhotoFoundCalled,
-                      "noPhotoFoundCalled function shouldn't be called")
         XCTAssertEqual(presenter.getPhotos().first?.rover.name, FilterOption.curiosity.title,
                       "Retrieved rover names should be equal to curiosity.")
         XCTAssertFalse(presenter.wsErrorOccurredCalled,
@@ -71,8 +69,6 @@ class DashboardInteractorUnitTestCase: XCTestCase {
                       "photosReceivedCalled function should be called")
         XCTAssertGreaterThan(presenter.getPhotos().count, 0,
                              "Photo items should be retrieved from interactor")
-        XCTAssertFalse(presenter.noPhotoFoundCalled,
-                      "noPhotoFoundCalled function shouldn't be called")
         XCTAssertEqual(presenter.getPhotos().first?.rover.name, FilterOption.opportunity.title,
                       "Retrieved rover names should be equal to opportunity.")
         XCTAssertFalse(presenter.wsErrorOccurredCalled,
@@ -93,8 +89,6 @@ class DashboardInteractorUnitTestCase: XCTestCase {
                       "photosReceivedCalled function should be called")
         XCTAssertGreaterThan(presenter.getPhotos().count, 0,
                              "Photo items should be retrieved from interactor")
-        XCTAssertFalse(presenter.noPhotoFoundCalled,
-                      "noPhotoFoundCalled function shouldn't be called")
         XCTAssertEqual(presenter.getPhotos().first?.rover.name, FilterOption.spirit.title,
                       "Retrieved rover names should be equal to spirit.")
         XCTAssertFalse(presenter.wsErrorOccurredCalled,

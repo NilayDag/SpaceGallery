@@ -24,11 +24,7 @@ extension DashboardInteractorMock: IDashboardInteractor {
         if willDataRetrievedAsFail {
             output?.wsErrorOccurred(with: Constants.Error.defaultErrorMessage)
         } else {
-            if photoListMockData.isEmpty {
-                output?.noPhotoFound()
-            } else {
-                output?.photosReceived(photoListMockData)
-            }
+            output?.photosReceived(photoListMockData)
         }
     }
 }
