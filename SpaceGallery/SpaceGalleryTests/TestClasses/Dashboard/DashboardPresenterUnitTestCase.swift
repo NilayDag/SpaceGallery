@@ -41,6 +41,8 @@ class DashboardPresenterUnitTestCase: XCTestCase {
         sut.viewDidLoad()
 
         // Then
+        XCTAssertTrue(view.showEmptyStateCalled,
+                      "showEmptyState function on view should be called")
         XCTAssertTrue(view.addFilteringButtonCalled,
                       "addFilteringButton function on view should be called")
         XCTAssertTrue(view.setFilterOptionsCalled,
@@ -80,6 +82,8 @@ class DashboardPresenterUnitTestCase: XCTestCase {
         // Then
         XCTAssertTrue(view.hideFilterOptionsPopoverCalled,
                       "hideFilterOptionsPopover function on view should be called")
+        XCTAssertTrue(view.hideEmptyStateCalled,
+                      "hideEmptyState function on view should be called")
         XCTAssertEqual(sut.getPhotos().count, 0,
                       "Photo items on presenter should be cleared.")
         XCTAssertTrue(interactor.retrievePhotosCalled,
@@ -134,15 +138,6 @@ class DashboardPresenterUnitTestCase: XCTestCase {
                        "When wsErrorOccured function called on Presenter, view should show error message")
     }
     
-    func testNoPhotoFound() {
-        // When
-        sut.noPhotoFound()
-
-        // Then
-        XCTAssertFalse(view.isProgressShowing,
-                       "When noPhotoFound function called on Presenter, view should hide progress hud.")
-    }
-    
     func testPhotosReceived() {
         // Given
         let photosMockData = createPhotoListMockData()
@@ -162,7 +157,7 @@ class DashboardPresenterUnitTestCase: XCTestCase {
                        "When photosReceived function called on Presenter, view shouldn't show any error messages.")
     }
 
-    func testPhotosReceived_WithEmptyWidgetList() {
+    func testPhotosReceived_WithEmptyPhotoList() {
         // Given
         let photosMockData = [Photo]()
     

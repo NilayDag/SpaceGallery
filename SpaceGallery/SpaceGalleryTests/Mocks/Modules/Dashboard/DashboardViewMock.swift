@@ -20,6 +20,8 @@ public class DashboardViewMock: IDashboardView {
     var setFilterOptionsCalled = false
     var openFilterOptionsPopoverCalled = false
     var hideFilterOptionsPopoverCalled = false
+    var showEmptyStateCalled = true
+    var hideEmptyStateCalled = true
     var collectionViewScrolledCalled = false
     
     public func showProgressHUD() {
@@ -56,6 +58,14 @@ public class DashboardViewMock: IDashboardView {
     
     public func hideFilterOptionsPopover() {
         hideFilterOptionsPopoverCalled = true
+    }
+    
+    public func showEmptyState() {
+        showEmptyStateCalled = true
+    }
+
+    public func hideEmptyState() {
+        hideEmptyStateCalled = true
     }
     
     public func collectionViewScrolled(with position: CGFloat) {
