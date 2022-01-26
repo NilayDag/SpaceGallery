@@ -67,24 +67,24 @@ extension PhotoGalleryCollectionViewAdapter: UICollectionViewDelegate, UICollect
         numberOfItems()
     }
 
-    // swiftlint:disable:next line_length
     /**
      Asks your data source object for the cell that corresponds to the specified item in the collection view.
 
      - Parameters collectionView: The collection view requesting this information.
      - Parameters indexPath: The index path that specifies the location of the item.
     */
+    // swiftlint:disable:next line_length
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         setupPhotoCollectionViewCell(collectionView: collectionView, indexPath: indexPath)
     }
 
-    // swiftlint:disable:next line_length
     /**
      Sets up the photo collection view cell.
 
      - Parameters collectionView: The collection view requesting this information.
      - Parameters indexPath: The index path that specifies the location of the item.
     */
+    // swiftlint:disable:next line_length
     private func setupPhotoCollectionViewCell(collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
         let identifier = PhotoCollectionViewCell.nameOfClass
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath)
