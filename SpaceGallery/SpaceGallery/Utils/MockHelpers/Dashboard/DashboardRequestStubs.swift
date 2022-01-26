@@ -10,18 +10,16 @@ import OHHTTPStubsSwift
 
 class RetrieveCuriosityPhotosRequestStubs: StubHelperProtocol {
     static let shared: StubHelperProtocol = RetrieveCuriosityPhotosRequestStubs()
-    var stubName: String = MockConstants.Stubs.retrievePhotos(page: 0, filterOption: FilterOption.curiosity.rawValue).name
+    var stubName: String = "retrieveCuriosityPhotosRequestStubs"
     weak var retrieveCuriosityPhotosRequestStubs: HTTPStubsDescriptor?
 
-    private let router = APIRouter.retrievePhotos(page: 0, filterOption: FilterOption.curiosity.rawValue)
+    private let router = APIRouter.retrievePhotos(page: 1, filterOption: FilterOption.curiosity.rawValue)
 
     func loadStubs() {
         self.unloadStubs()
         guard let urlRequest = try? router.asURLRequest() else { return }
         retrieveCuriosityPhotosRequestStubs = HTTPStubs().stub(request: urlRequest) { _ in
-            guard let stubPath = OHPathForFile(MockConstants.Stubs
-                                               .retrievePhotos(page: 0,
-                                                               filterOption: FilterOption.curiosity.rawValue).responseJSONFileName,
+            guard let stubPath = OHPathForFile("curiosityPhotos.json",
                                                type(of: self)) else { return
                 HTTPStubsResponse()
             }
@@ -48,18 +46,16 @@ class RetrieveCuriosityPhotosRequestStubs: StubHelperProtocol {
 
 class RetrieveOpportunityPhotosRequestStubs: StubHelperProtocol {
     static let shared: StubHelperProtocol = RetrieveOpportunityPhotosRequestStubs()
-    var stubName: String = MockConstants.Stubs.retrievePhotos(page: 0, filterOption: FilterOption.opportunity.rawValue).name
+    var stubName: String = "retrieveOpportunityPhotosRequestStubs"
     weak var retrieveOpportunityPhotosRequestStubs: HTTPStubsDescriptor?
 
-    private let router = APIRouter.retrievePhotos(page: 0, filterOption: FilterOption.opportunity.rawValue)
+    private let router = APIRouter.retrievePhotos(page: 1, filterOption: FilterOption.opportunity.rawValue)
 
     func loadStubs() {
         self.unloadStubs()
         guard let urlRequest = try? router.asURLRequest() else { return }
         retrieveOpportunityPhotosRequestStubs = HTTPStubs().stub(request: urlRequest) { _ in
-            guard let stubPath = OHPathForFile(MockConstants.Stubs
-                                               .retrievePhotos(page: 0,
-                                                               filterOption: FilterOption.opportunity.rawValue).responseJSONFileName,
+            guard let stubPath = OHPathForFile("opportunityPhotos.json",
                                                type(of: self)) else { return
                 HTTPStubsResponse()
             }
@@ -86,18 +82,16 @@ class RetrieveOpportunityPhotosRequestStubs: StubHelperProtocol {
 
 class RetrieveSpiritPhotosRequestStubs: StubHelperProtocol {
     static let shared: StubHelperProtocol = RetrieveSpiritPhotosRequestStubs()
-    var stubName: String = MockConstants.Stubs.retrievePhotos(page: 0, filterOption: FilterOption.spirit.rawValue).name
+    var stubName: String = "retrieveSpiritPhotosRequestStubs"
     weak var retrieveSpiritPhotosRequestStubs: HTTPStubsDescriptor?
 
-    private let router = APIRouter.retrievePhotos(page: 0, filterOption: FilterOption.spirit.rawValue)
+    private let router = APIRouter.retrievePhotos(page: 1, filterOption: FilterOption.spirit.rawValue)
 
     func loadStubs() {
         self.unloadStubs()
         guard let urlRequest = try? router.asURLRequest() else { return }
         retrieveSpiritPhotosRequestStubs = HTTPStubs().stub(request: urlRequest) { _ in
-            guard let stubPath = OHPathForFile(MockConstants.Stubs
-                                               .retrievePhotos(page: 0,
-                                                               filterOption: FilterOption.spirit.rawValue).responseJSONFileName,
+            guard let stubPath = OHPathForFile("spiritPhotos.json",
                                                type(of: self)) else { return
                 HTTPStubsResponse()
             }

@@ -23,9 +23,6 @@
 		3122DC0B27A057EF0083020B /* FilterOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DC0A27A057EF0083020B /* FilterOption.swift */; };
 		3122DC1D27A08F310083020B /* OHHTTPStubs in Frameworks */ = {isa = PBXBuildFile; productRef = 3122DC1C27A08F310083020B /* OHHTTPStubs */; };
 		3122DC1F27A08F310083020B /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3122DC1E27A08F310083020B /* OHHTTPStubsSwift */; };
-		3122DC2327A08FC10083020B /* curiosityPhotos.json in Resources */ = {isa = PBXBuildFile; fileRef = 3122DC2227A08FC10083020B /* curiosityPhotos.json */; };
-		3122DC2627A08FFC0083020B /* spiritPhotos.json in Resources */ = {isa = PBXBuildFile; fileRef = 3122DC2427A08FFC0083020B /* spiritPhotos.json */; };
-		3122DC2727A08FFC0083020B /* opportunityPhotos.json in Resources */ = {isa = PBXBuildFile; fileRef = 3122DC2527A08FFC0083020B /* opportunityPhotos.json */; };
 		3122DC2D27A090570083020B /* XCTestCase+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DC2C27A090570083020B /* XCTestCase+Ext.swift */; };
 		3122DC3227A0908C0083020B /* DashboardViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DC3127A0908C0083020B /* DashboardViewMock.swift */; };
 		3122DC3427A090930083020B /* DashboardPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DC3327A090930083020B /* DashboardPresenterMock.swift */; };
@@ -37,9 +34,11 @@
 		3122DC4427A097810083020B /* DashboardPresenterUnitTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DC4327A097810083020B /* DashboardPresenterUnitTestCase.swift */; };
 		3122DC4627A097910083020B /* PhotoDetailsUnitTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DC4527A097910083020B /* PhotoDetailsUnitTestCase.swift */; };
 		3122DC4927A097D40083020B /* NetworkMockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DC4827A097D40083020B /* NetworkMockManager.swift */; };
-		3122DC4D27A098240083020B /* MockConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122DC4C27A098240083020B /* MockConstants.swift */; };
 		31440C0127A16FED007452E6 /* DashboardRequestStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31440C0027A16FED007452E6 /* DashboardRequestStubs.swift */; };
 		31440C0327A170CE007452E6 /* HTTPStubs+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31440C0227A170CE007452E6 /* HTTPStubs+Ext.swift */; };
+		31440C0727A18125007452E6 /* spiritPhotos.json in Resources */ = {isa = PBXBuildFile; fileRef = 31440C0427A18125007452E6 /* spiritPhotos.json */; };
+		31440C0827A18125007452E6 /* curiosityPhotos.json in Resources */ = {isa = PBXBuildFile; fileRef = 31440C0527A18125007452E6 /* curiosityPhotos.json */; };
+		31440C0927A18125007452E6 /* opportunityPhotos.json in Resources */ = {isa = PBXBuildFile; fileRef = 31440C0627A18125007452E6 /* opportunityPhotos.json */; };
 		3191579E279DF9A900706B96 /* PhotoGalleryCollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3191579D279DF9A900706B96 /* PhotoGalleryCollectionViewAdapter.swift */; };
 		319157A1279DFA6700706B96 /* DashboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319157A0279DFA6700706B96 /* DashboardConstants.swift */; };
 		319157A5279DFB4D00706B96 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319157A3279DFB4D00706B96 /* PhotoCollectionViewCell.swift */; };
@@ -106,9 +105,6 @@
 		3122DC0627A04C080083020B /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		3122DC0827A04C120083020B /* Popover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popover.storyboard; sourceTree = "<group>"; };
 		3122DC0A27A057EF0083020B /* FilterOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOption.swift; sourceTree = "<group>"; };
-		3122DC2227A08FC10083020B /* curiosityPhotos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = curiosityPhotos.json; sourceTree = "<group>"; };
-		3122DC2427A08FFC0083020B /* spiritPhotos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spiritPhotos.json; sourceTree = "<group>"; };
-		3122DC2527A08FFC0083020B /* opportunityPhotos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = opportunityPhotos.json; sourceTree = "<group>"; };
 		3122DC2C27A090570083020B /* XCTestCase+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Ext.swift"; sourceTree = "<group>"; };
 		3122DC3127A0908C0083020B /* DashboardViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewMock.swift; sourceTree = "<group>"; };
 		3122DC3327A090930083020B /* DashboardPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPresenterMock.swift; sourceTree = "<group>"; };
@@ -120,9 +116,11 @@
 		3122DC4327A097810083020B /* DashboardPresenterUnitTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPresenterUnitTestCase.swift; sourceTree = "<group>"; };
 		3122DC4527A097910083020B /* PhotoDetailsUnitTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsUnitTestCase.swift; sourceTree = "<group>"; };
 		3122DC4827A097D40083020B /* NetworkMockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMockManager.swift; sourceTree = "<group>"; };
-		3122DC4C27A098240083020B /* MockConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConstants.swift; sourceTree = "<group>"; };
 		31440C0027A16FED007452E6 /* DashboardRequestStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRequestStubs.swift; sourceTree = "<group>"; };
 		31440C0227A170CE007452E6 /* HTTPStubs+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPStubs+Ext.swift"; sourceTree = "<group>"; };
+		31440C0427A18125007452E6 /* spiritPhotos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = spiritPhotos.json; sourceTree = "<group>"; };
+		31440C0527A18125007452E6 /* curiosityPhotos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = curiosityPhotos.json; sourceTree = "<group>"; };
+		31440C0627A18125007452E6 /* opportunityPhotos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = opportunityPhotos.json; sourceTree = "<group>"; };
 		3191579D279DF9A900706B96 /* PhotoGalleryCollectionViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryCollectionViewAdapter.swift; sourceTree = "<group>"; };
 		319157A0279DFA6700706B96 /* DashboardConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardConstants.swift; sourceTree = "<group>"; };
 		319157A3279DFB4D00706B96 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -253,9 +251,9 @@
 		3122DC2127A08F490083020B /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				3122DC2227A08FC10083020B /* curiosityPhotos.json */,
-				3122DC2527A08FFC0083020B /* opportunityPhotos.json */,
-				3122DC2427A08FFC0083020B /* spiritPhotos.json */,
+				31440C0527A18125007452E6 /* curiosityPhotos.json */,
+				31440C0627A18125007452E6 /* opportunityPhotos.json */,
+				31440C0427A18125007452E6 /* spiritPhotos.json */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -342,7 +340,6 @@
 		3122DC4727A097C80083020B /* MockHelpers */ = {
 			isa = PBXGroup;
 			children = (
-				3122DC4B27A0981D0083020B /* MockConstants */,
 				3122DC4A27A098150083020B /* Dashboard */,
 				3122DC4827A097D40083020B /* NetworkMockManager.swift */,
 			);
@@ -355,14 +352,6 @@
 				31440C0027A16FED007452E6 /* DashboardRequestStubs.swift */,
 			);
 			path = Dashboard;
-			sourceTree = "<group>";
-		};
-		3122DC4B27A0981D0083020B /* MockConstants */ = {
-			isa = PBXGroup;
-			children = (
-				3122DC4C27A098240083020B /* MockConstants.swift */,
-			);
-			path = MockConstants;
 			sourceTree = "<group>";
 		};
 		3191579C279DF8F500706B96 /* PhotoGalleryCollectionViewAdapter */ = {
@@ -704,12 +693,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3122DBF9279F1E980083020B /* PhotoDetails.storyboard in Resources */,
-				3122DC2627A08FFC0083020B /* spiritPhotos.json in Resources */,
+				31440C0727A18125007452E6 /* spiritPhotos.json in Resources */,
+				31440C0927A18125007452E6 /* opportunityPhotos.json in Resources */,
 				31B1A268279DE1E90013695A /* LaunchScreen.storyboard in Resources */,
 				319157A6279DFB4D00706B96 /* PhotoCollectionViewCell.xib in Resources */,
+				31440C0827A18125007452E6 /* curiosityPhotos.json in Resources */,
 				31B1A265279DE1E90013695A /* Assets.xcassets in Resources */,
-				3122DC2327A08FC10083020B /* curiosityPhotos.json in Resources */,
-				3122DC2727A08FFC0083020B /* opportunityPhotos.json in Resources */,
 				3122DC0927A04C120083020B /* Popover.storyboard in Resources */,
 				31B1A2A4279DE9C40013695A /* Dashboard.storyboard in Resources */,
 			);
@@ -761,7 +750,6 @@
 				3122DBE8279F04E30083020B /* Constants.swift in Sources */,
 				31B1A2A5279DE9C40013695A /* DashboardContract.swift in Sources */,
 				31440C0327A170CE007452E6 /* HTTPStubs+Ext.swift in Sources */,
-				3122DC4D27A098240083020B /* MockConstants.swift in Sources */,
 				3122DC0727A04C090083020B /* PopoverViewController.swift in Sources */,
 				3122DBFB279F1E980083020B /* PhotoDetailsPresenter.swift in Sources */,
 				31B1A2BE279DEDC50013695A /* APIProvider.swift in Sources */,
@@ -991,6 +979,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DMOCK_ENABLED";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nilaydagdemir.SpaceGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1021,6 +1010,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DMOCK_ENABLED";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nilaydagdemir.SpaceGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
