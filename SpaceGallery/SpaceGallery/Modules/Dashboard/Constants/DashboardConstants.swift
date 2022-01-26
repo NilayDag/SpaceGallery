@@ -7,6 +7,7 @@
 
 import UIKit
 
+// MARK: - DashboardConstants
 struct DashboardConstants {
     static let photoGallerySectionCount: Int = 1
     static let title: String =  "Photos"
