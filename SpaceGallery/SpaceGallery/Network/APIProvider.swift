@@ -52,7 +52,6 @@ class APIProvider: NSObject {
                             onError(wsError)
                         } catch _ {
                             onError(nil)
-                            // TODO: May log the casting error
                         }
                         onError(nil)
                         return
