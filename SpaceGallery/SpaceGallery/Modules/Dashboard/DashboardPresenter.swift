@@ -15,6 +15,7 @@ class DashboardPresenter {
     var router: IDashboardRouter?
     var interactor: IDashboardInteractor?
     private var layoutGenerator = GalleryCollectionViewLayoutGenerator()
+    private var isEmptyStateShowing: Bool = false
     private var currentPage: Int = 1
     private var isPaginating: Bool = false
     private var doesHavePhotoToFetch: Bool = true
@@ -25,6 +26,7 @@ class DashboardPresenter {
 
 extension DashboardPresenter: IDashboardPresenter {
     func viewDidLoad() {
+        view?.showEmptyState()
         view?.showProgressHUD()
         view?.addFilteringButton()
         view?.setFilterOptions(to: filteringOptions)
@@ -42,6 +44,7 @@ extension DashboardPresenter: IDashboardPresenter {
 
     func filterPhotos(with option: FilterOption) {
         view?.hideFilterOptionsPopover()
+        view?.hideEmptyState()
         view?.showProgressHUD()
         currentFilterOption = option
         photos.removeAll()
@@ -69,22 +72,22 @@ extension DashboardPresenter: IDashboardInteractorToPresenter {
         isPaginating = false
     }
 
-    func noPhotoFound() {
-        view?.hideProgressHUD()
-        isPaginating = false
-        // TODO: show empty state
-    }
-
     func photosReceived(_ photoList: [Photo]) {
+        view?.hideProgressHUD()
         if photoList.isEmpty {
             doesHavePhotoToFetch = false
+            if photos.isEmpty, !isEmptyStateShowing {
+                self.view?.showEmptyState()
+            }
         } else {
             photos.append(contentsOf: photoList)
             isPaginating = false
             doesHavePhotoToFetch = true
             currentPage += 1
-            view?.hideProgressHUD()
             view?.reloadCollectionView()
+            if !isEmptyStateShowing {
+                view?.hideEmptyState()
+            }
         }
     }
 }

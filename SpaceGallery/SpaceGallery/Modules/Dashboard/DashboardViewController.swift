@@ -14,6 +14,14 @@ class DashboardViewController: UIViewController, StoryboardLoadable {
     @IBOutlet private weak var photoGalleryCollectionView: UICollectionView!
 
     // MARK: - Properties
+    private lazy var emptyStateView: EmptyStateView = {
+        let emptyState = EmptyStateView(frame: CGRect(x: 0,
+                                                      y: 0,
+                                                      width: DashboardConstants.emptyStateViewWidth,
+                                                      height: DashboardConstants.emptyStateViewHeight))
+        emptyState.center = view.center
+        return emptyState
+    }()
     var presenter: IDashboardPresenter?
     var adapter: PhotoGalleryCollectionViewAdapter?
     var menuBarButtonItem: UIBarButtonItem?
@@ -77,6 +85,14 @@ extension DashboardViewController: IDashboardView {
 
     func hideFilterOptionsPopover() {
         popoverViewControler?.dismiss(animated: true, completion: nil)
+    }
+
+    func showEmptyState() {
+        view.addSubview(emptyStateView)
+    }
+
+    func hideEmptyState() {
+        emptyStateView.removeFromSuperview()
     }
 
     func collectionViewScrolled(with position: CGFloat) {

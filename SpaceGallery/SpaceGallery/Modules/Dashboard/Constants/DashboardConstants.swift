@@ -12,4 +12,6 @@ struct DashboardConstants {
     static let title: String =  "Photos"
     static let menuIconName: String = "icon_menu"
     static let minScrollValueForLoadMore: CGFloat = 100
+    static let emptyStateViewWidth: CGFloat = 180.0
+    static let emptyStateViewHeight: CGFloat = 180.0
 }

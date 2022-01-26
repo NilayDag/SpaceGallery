@@ -14,6 +14,8 @@ protocol IDashboardView: IBaseView {
     func setLayout(from generator: GalleryCollectionViewLayoutGenerator)
     func openFilterOptionsPopover()
     func hideFilterOptionsPopover()
+    func showEmptyState()
+    func hideEmptyState()
     func reloadCollectionView()
     func collectionViewScrolled(with position: CGFloat)
 }
@@ -32,7 +34,6 @@ protocol IDashboardInteractor: AnyObject {
 
 protocol IDashboardInteractorToPresenter: IBaseInteractorToPresenter {
     func photosReceived(_ photoList: [Photo])
-    func noPhotoFound()
 }
 
 protocol IDashboardRouter: AnyObject {

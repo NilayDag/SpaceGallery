@@ -22,11 +22,7 @@ extension DashboardInteractor: IDashboardInteractor {
                                   onSuccess: { [weak self] response in
             guard let self = self else { return }
             if let photos = response.results?.photos {
-                if photos.isEmpty {
-                    self.output?.noPhotoFound()
-                } else {
-                    self.output?.photosReceived(photos)
-                }
+                self.output?.photosReceived(photos)
             } else {
                 self.output?.wsErrorOccurred(with: Constants.Error.defaultErrorMessage)
             }

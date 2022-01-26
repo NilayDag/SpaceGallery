@@ -37,3 +37,14 @@ import UIKit
         }
     }
 }
+
+extension UIView {
+    @discardableResult
+    func loadNib() -> UIView {
+        let bundle = Bundle(for: type(of: self))
+        let nibName = type(of: self).nameOfClass
+        let nib = UINib(nibName: nibName, bundle: bundle)
+        return nib.instantiate(withOwner: self, options: nil).first
+            as? UIView ?? UIView()
+    }
+}
