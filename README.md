@@ -3,7 +3,7 @@ An iOS Application written in Swift. This app has a photo gallery with images re
 
 This project uses swift package manager. Hence, after you clone the repository or download the zip to open the project, you may need to run *"Resolve Swift Packages"* command in order to install package dependencies.
 
-**Used packages:**
+### Used Packages:
 
 1. *Alamofire* (for network requests)
     For more information, kindly visit: https://github.com/Alamofire/Alamofire
