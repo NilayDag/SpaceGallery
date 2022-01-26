@@ -22,6 +22,10 @@ class PhotoDetailsViewController: UIViewController, StoryboardLoadable {
     var presenter: IPhotoDetailsPresenter?
 
     // MARK: - Lifecycle
+    /**
+     A lifecycle method which is called after the view controller has loaded its view hierarchy into memory.
+     Sets the initial setup functions implemented on view.
+    */
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
@@ -30,6 +34,11 @@ class PhotoDetailsViewController: UIViewController, StoryboardLoadable {
 }
 
 extension PhotoDetailsViewController: IPhotoDetailsView {
+    /**
+     Sets UI component contents by given photo item.
+     
+     - Parameters photoItem: A Photo item to set details on the screen.
+    */
     func setUIElements(with photoItem: Photo) {
         ImageManager.shared.downloadOrSetFromCache(from: photoItem.imgSrc,
                                                    for: photoImageView)

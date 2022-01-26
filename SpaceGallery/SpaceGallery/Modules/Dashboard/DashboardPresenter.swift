@@ -26,7 +26,8 @@ class DashboardPresenter {
 
 extension DashboardPresenter: IDashboardPresenter {
     /**
-     A lifecycle method triggered from view which is called after the view controller has loaded its view hierarchy into memory.
+     A lifecycle method triggered from view which is called after
+     the view controller has loaded its view hierarchy into memory.
      Sets the initial setup functions implemented on view
     */
     func viewDidLoad() {

@@ -191,7 +191,8 @@ extension DashboardViewController: IDashboardView {
 
 extension DashboardViewController: PopoverViewDelegate {
     /**
-     PopoverViewDelegate method. Triggers when one of the filter option is pressed. Filters photos by given filter option.
+     PopoverViewDelegate method. Triggers when one of the filter option is pressed.
+     Filters photos by given filter option.
      
      - Parameters sender: A FilterOption to filter photos.
     */
