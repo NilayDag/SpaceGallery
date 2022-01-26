@@ -14,6 +14,9 @@ class DashboardRouter {
     weak var view: UIViewController?
 
     // MARK: Static methods
+    /**
+     A static method that sets up the related VIPER modules.
+    */
     static func setupModule() -> DashboardViewController {
         let viewController = UIStoryboard.loadViewController() as DashboardViewController
         let presenter = DashboardPresenter()
@@ -39,6 +42,11 @@ class DashboardRouter {
 }
 
 extension DashboardRouter: IDashboardRouter {
+    /**
+     Navigates user to the photo details screen.
+    
+     - Parameters photo: A photo object to show details.
+    */
     func navigateToPhotoDetails(for photo: Photo) {
         view?.navigationController?.pushViewController(PhotoDetailsRouter
                                                        .setupModule(with: photo), animated: true)

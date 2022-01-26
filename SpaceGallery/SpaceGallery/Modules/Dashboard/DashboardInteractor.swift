@@ -16,6 +16,12 @@ class DashboardInteractor {
 }
 
 extension DashboardInteractor: IDashboardInteractor {
+    /**
+     Retrieve photos with given page number and filter option from the NASA API.
+     
+     - Parameters pageNumber: An integer that represents the page number to retrieve.
+     - Parameters filterOption: A FilterOption object that represents the filter type to filter.
+    */
     func retrievePhotos(from pageNumber: Int, with filterOption: FilterOption) {
         apiClient?.retrievePhotos(page: pageNumber,
                                   with: filterOption.rawValue,
