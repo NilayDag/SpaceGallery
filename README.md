@@ -29,6 +29,7 @@ Also *SwiftLint* installed to the project in order to standardize the code base.
 
 ### Environment Info:
 **Xcode version: 13.2.1**
+
 **Swift version:5.5**
 
 **This project uses *VIPER* as an architecture model.**
