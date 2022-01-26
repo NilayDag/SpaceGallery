@@ -14,8 +14,13 @@ This project uses swift package manager. Hence, after you clone the repository o
 
 Also *SwiftLint* installed to the project in order to standardize the code base.
 
-- This project uses *VIPER* as an architecture model. 
-- I created a template in order to simplify the creation process of the VIPER modules. If you want to create new VIPER module in the project, you can simply use the VIPER files template I created. (By clicking File > New > File > VIPER Native Files or ⌘+N > VIPER Native Files)
+### Environment Info:
+**Xcode version: 13.0**
+**Swift version:5.5**
+
+**This project uses *VIPER* as an architecture model.**
+
+### Mock Data:
 - You may run the project with using mock data. For this, simply add "*-DMOCK_ENABLED*" flag as an other swift flags in Build Configuration.
     - If you are running the project using mock data, you can alter the mock JSON responses placed in "Resources > MockJSONs > Dashboard > curiosityPhotos.json",
            "Resources > MockJSONs > Dashboard > opportunityPhotos.json" or
