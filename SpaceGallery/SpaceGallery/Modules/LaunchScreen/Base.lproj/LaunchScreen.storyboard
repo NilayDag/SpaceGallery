@@ -31,12 +31,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="FEr-Xg-JJP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0CC-GY-1AF"/>
-                            <constraint firstAttribute="bottom" secondItem="FEr-Xg-JJP" secondAttribute="bottom" id="GtT-sb-FAV"/>
+                            <constraint firstItem="FEr-Xg-JJP" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="Arm-F6-HnX"/>
                             <constraint firstItem="G7Q-RS-DnI" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="adT-eF-fev"/>
-                            <constraint firstItem="FEr-Xg-JJP" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="mUT-FZ-DaI"/>
+                            <constraint firstItem="FEr-Xg-JJP" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="f1Q-dn-o7Z"/>
+                            <constraint firstItem="FEr-Xg-JJP" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="loC-wS-OJH"/>
                             <constraint firstItem="G7Q-RS-DnI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="osy-le-2ZT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FEr-Xg-JJP" secondAttribute="trailing" id="rBz-8D-lh1"/>
+                            <constraint firstAttribute="bottom" secondItem="FEr-Xg-JJP" secondAttribute="bottom" id="yvv-H6-Uet"/>
                         </constraints>
                     </view>
                 </viewController>
