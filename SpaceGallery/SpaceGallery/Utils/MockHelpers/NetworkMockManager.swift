@@ -33,8 +33,9 @@ class NetworkMockManager {
     }
 
     func loadRequiredStubs() {
-        // TODO: to be implemented
-//        RetrievePhotosRequestStubs.shared.loadStubs()
+        RetrieveCuriosityPhotosRequestStubs.shared.loadStubs()
+        RetrieveOpportunityPhotosRequestStubs.shared.loadStubs()
+        RetrieveSpiritPhotosRequestStubs.shared.loadStubs()
     }
 
     func removeAllStubs() {
