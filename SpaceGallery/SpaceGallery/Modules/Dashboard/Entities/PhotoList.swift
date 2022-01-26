@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - PhotoList
 struct PhotoList: Codable {
     let photos: [Photo]
 }

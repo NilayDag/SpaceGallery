@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - FilterOptions
 public enum FilterOption: String, CaseIterable {
     case curiosity, opportunity, spirit
 
