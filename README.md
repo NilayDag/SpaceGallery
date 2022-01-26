@@ -28,7 +28,7 @@ Also *SwiftLint* installed to the project in order to standardize the code base.
   *For more information about *SwiftLint*, kindly visit: https://github.com/realm/SwiftLint*
 
 ### Environment Info:
-**Xcode version: 13.0**
+**Xcode version: 13.2.1**
 **Swift version:5.5**
 
 **This project uses *VIPER* as an architecture model.**
