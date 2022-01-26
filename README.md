@@ -36,6 +36,6 @@ Also *SwiftLint* installed to the project in order to standardize the code base.
 
 ### Mock Data:
 - You may run the project with mock data. For this, simply add "*-DMOCK_ENABLED*" flag as an other swift flags in Build Configuration.
-    - If you are running the project using mock data, you can alter the mock JSON responses placed in "Resources > MockJSONs > Dashboard > curiosityPhotos.json",
-           "Resources > MockJSONs > Dashboard > opportunityPhotos.json" or
-           "Resources > MockJSONs > Dashboard > spiritPhotos.json"
+- If you are running the project using mock data, you can alter the mock JSON responses placed in "Resources > MockJSONs > Dashboard > curiosityPhotos.json",
+    "Resources > MockJSONs > Dashboard > opportunityPhotos.json" or
+    "Resources > MockJSONs > Dashboard > spiritPhotos.json"
