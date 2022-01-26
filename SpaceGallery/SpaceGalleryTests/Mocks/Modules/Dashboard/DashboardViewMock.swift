@@ -16,6 +16,7 @@ public class DashboardViewMock: IDashboardView {
     var showErrorDialogCalled = false
     var reloadCollectionViewCalled = false
     var setLayoutCalled = false
+    var addPinchGestureToCollectionViewCalled = false
     var addFilteringButtonCalled = false
     var setFilterOptionsCalled = false
     var openFilterOptionsPopoverCalled = false
@@ -23,6 +24,8 @@ public class DashboardViewMock: IDashboardView {
     var showEmptyStateCalled = true
     var hideEmptyStateCalled = true
     var collectionViewScrolledCalled = false
+    var setCollectionViewTransformCalled = false
+    var collectionViewPinchedCalled = false
     
     public func showProgressHUD() {
         isProgressShowing = true
@@ -42,6 +45,10 @@ public class DashboardViewMock: IDashboardView {
     
     public func setLayout(from generator: GalleryCollectionViewLayoutGenerator) {
         setLayoutCalled = true
+    }
+
+    public func addPinchGestureToCollectionView() {
+        addPinchGestureToCollectionViewCalled = true
     }
     
     public func addFilteringButton() {
@@ -70,5 +77,13 @@ public class DashboardViewMock: IDashboardView {
     
     public func collectionViewScrolled(with position: CGFloat) {
         collectionViewScrolledCalled = true
+    }
+    
+    public func setCollectionViewTransform(to transform: CGAffineTransform) {
+        setCollectionViewTransformCalled = true
+    }
+    
+    @IBAction public func collectionViewPinched(sender: UIPinchGestureRecognizer) {
+        collectionViewPinchedCalled = true
     }
 }

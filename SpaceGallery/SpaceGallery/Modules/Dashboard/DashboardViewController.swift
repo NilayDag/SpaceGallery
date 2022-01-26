@@ -34,6 +34,11 @@ class DashboardViewController: UIViewController, StoryboardLoadable {
         commonInit()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        photoGalleryCollectionView.transform = .identity
+    }
+
     private func commonInit() {
         title = DashboardConstants.title
         setupCollectionView()
@@ -45,14 +50,28 @@ class DashboardViewController: UIViewController, StoryboardLoadable {
         photoGalleryCollectionView.registerCell(PhotoCollectionViewCell.self)
     }
 
-    @objc private func onFilterButtonPressed() {
+    @IBAction private func onFilterButtonPressed() {
         presenter?.onFilterButtonPressed()
+    }
+
+    @IBAction private func collectionViewPinched(sender: UIPinchGestureRecognizer) {
+        if sender.state == .began || sender.state == .changed,
+            presenter?.getPhotos().count ?? 0 > 0 {
+            presenter?.onCollectionViewPinched(sender: sender,
+                                             with: photoGalleryCollectionView.frame.size.width,
+                                             photoGalleryCollectionView.bounds.size.width)
+        }
     }
 }
 
 extension DashboardViewController: IDashboardView {
     func setLayout(from generator: GalleryCollectionViewLayoutGenerator) {
         photoGalleryCollectionView.collectionViewLayout = generator.generateLayout()
+    }
+
+    func addPinchGestureToCollectionView() {
+        let pinch = UIPinchGestureRecognizer(target: self, action: #selector(collectionViewPinched(sender:)))
+        photoGalleryCollectionView.addGestureRecognizer(pinch)
     }
 
     func reloadCollectionView() {
@@ -100,6 +119,10 @@ extension DashboardViewController: IDashboardView {
         if position > photoGalleryCollectionView.contentSize.height - DashboardConstants.minScrollValueForLoadMore - photoGalleryCollectionView.frame.size.height {
             presenter?.onLoadMore()
         }
+    }
+
+    func setCollectionViewTransform(to transform: CGAffineTransform) {
+        photoGalleryCollectionView.transform = transform
     }
 }
 

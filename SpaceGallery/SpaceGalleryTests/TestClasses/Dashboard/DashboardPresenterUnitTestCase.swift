@@ -49,6 +49,8 @@ class DashboardPresenterUnitTestCase: XCTestCase {
                       "setFilterOptions function on view should be called")
         XCTAssertTrue(view.setLayoutCalled,
                       "setLayout function on view should be called")
+        XCTAssertTrue(view.addPinchGestureToCollectionViewCalled,
+                      "addPinchGestureToCollectionView function on view should be called")
     }
 
     func testGetPhotos() {
@@ -122,6 +124,27 @@ class DashboardPresenterUnitTestCase: XCTestCase {
         // Then
         XCTAssertFalse(interactor.retrievePhotosCalled,
                       "retrievePhotos function on interactor shouldn't be called without a filter option")
+    }
+    
+    private func createMockPinchGesture() -> UIPinchGestureRecognizer {
+        UIPinchGestureRecognizer()
+    }
+    
+
+    func testOnCollectionViewPinched() {
+        // Given
+        let mockPinchGesture = UIPinchGestureRecognizer()
+        let mockCollectionViewFrameWidth = 440.79
+        let mockCollectionViewBoundsWidth = 428.0
+        
+        // When
+        sut.onCollectionViewPinched(sender: mockPinchGesture,
+                                    with: mockCollectionViewFrameWidth,
+                                    mockCollectionViewBoundsWidth)
+
+        // Then
+        XCTAssertTrue(view.setCollectionViewTransformCalled,
+                      "setCollectionViewTransform function on view should be called")
     }
 
     func testWSErrorOccured() {

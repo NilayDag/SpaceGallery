@@ -12,6 +12,8 @@ protocol IDashboardView: IBaseView {
     func addFilteringButton()
     func setFilterOptions(to options: [FilterOption])
     func setLayout(from generator: GalleryCollectionViewLayoutGenerator)
+    func addPinchGestureToCollectionView()
+    func setCollectionViewTransform(to transform: CGAffineTransform)
     func openFilterOptionsPopover()
     func hideFilterOptionsPopover()
     func showEmptyState()
@@ -26,6 +28,9 @@ protocol IDashboardPresenter: IBasePresenter {
     func filterPhotos(with options: FilterOption)
     func photoItemPressed(with pressedItem: Photo)
     func onLoadMore()
+    func onCollectionViewPinched(sender: UIPinchGestureRecognizer,
+                                 with collectionViewFrameWidth: CGFloat,
+                                 _ collectionViewBoundWidth: CGFloat)
 }
 
 protocol IDashboardInteractor: AnyObject {

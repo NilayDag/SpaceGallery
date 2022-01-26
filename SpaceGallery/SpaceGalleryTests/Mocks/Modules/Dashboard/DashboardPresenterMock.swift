@@ -21,6 +21,7 @@ class DashboardPresenterMock {
     var onLoadMoreCalled = false
     var wsErrorOccurredCalled = false
     var photosReceivedCalled = false
+    var onCollectionViewPinchedCalled = false
 
     private var currentPage: Int = 1
     private var isPaginating: Bool = false
@@ -59,6 +60,12 @@ extension DashboardPresenterMock: IDashboardPresenter {
            currentFilterOption != nil {
             isPaginating = true
         }
+    }
+    
+    func onCollectionViewPinched(sender: UIPinchGestureRecognizer,
+                                 with collectionViewFrameWidth: CGFloat,
+                                 _ collectionViewBoundWidth: CGFloat) {
+        onCollectionViewPinchedCalled = true
     }
 }
 

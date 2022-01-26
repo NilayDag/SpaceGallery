@@ -6,7 +6,7 @@
 //  
 //
 
-import Foundation
+import UIKit
 
 class DashboardPresenter {
 
@@ -31,6 +31,7 @@ extension DashboardPresenter: IDashboardPresenter {
         view?.addFilteringButton()
         view?.setFilterOptions(to: filteringOptions)
         view?.setLayout(from: layoutGenerator)
+        view?.addPinchGestureToCollectionView()
         view?.hideProgressHUD()
     }
 
@@ -62,6 +63,16 @@ extension DashboardPresenter: IDashboardPresenter {
             interactor?.retrievePhotos(from: currentPage, with: filterOption)
             isPaginating = true
         }
+    }
+
+    func onCollectionViewPinched(sender: UIPinchGestureRecognizer,
+                                 with collectionViewFrameWidth: CGFloat,
+                                 _ collectionViewBoundWidth: CGFloat) {
+        let currentScale = collectionViewFrameWidth / collectionViewBoundWidth
+        let newScale = currentScale * sender.scale
+        let transform = CGAffineTransform(scaleX: newScale, y: newScale)
+        view?.setCollectionViewTransform(to: newScale > 1 ? transform: .identity)
+        sender.scale = 1
     }
 }
 
