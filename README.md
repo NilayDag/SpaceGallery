@@ -5,14 +5,25 @@ This project uses swift package manager. Hence, after you clone the repository o
 
 ### Used Packages:
 
-1. *Alamofire* (for network requests)
+1. *Alamofire*: for network requests
+    
     For more information, kindly visit: https://github.com/Alamofire/Alamofire
-2. *SDWebImage* (for image caching)
+    
+2. *SDWebImage*: for image caching
+
     For more information, kindly visit: https://github.com/SDWebImage/SDWebImage
-3. *OHHTTPStubs* (for stubbing network requests)
+    
+3. *OHHTTPStubs*: for stubbing network requests
+
     For more information, kindly visit: https://github.com/AliSoftware/OHHTTPStubs
 
-Also *SwiftLint* installed to the project in order to standardize the code base.
+Also *SwiftLint* installed to the project in order to standardize the code base. Consequently, if you don't have SwiftLint locally installed:
+    1. You can either disable *SwiftLint* by removing SwiftLint Run Script Phase from *Targets > Build Phases*
+    2. Or you can install *SwiftLint* using *Homebrew*. In order to install SwiftLint run below command via terminal:
+    
+        `brew install swiftlint`
+        
+       *For more information about *SwiftLint*, kindly visit: https://github.com/realm/SwiftLint*
 
 ### Environment Info:
 **Xcode version: 13.0**
